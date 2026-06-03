@@ -17,7 +17,7 @@ export default function Hero() {
 
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center gap-8 px-6 text-center">
-                <h1 className="font-glacial font-normal leading-snug tracking-tight text-white max-w-4xl text-h4">
+                <h1 className="font-glacial font-normal leading-snug tracking-tight text-white max-w-4xl text-h6 md:text-h4">
                     Search Engines (SEO) Agency
                     of AI and Media Buying SEA,
                     Social Ads and Programmatic
@@ -29,5 +29,5 @@ export default function Hero() {
                 </button>
             </div>
         </section>
-    );
+    )
 }
