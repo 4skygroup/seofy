@@ -1,7 +1,7 @@
 export default function About() {
     return (
 
-        <section className="relative flex items-center justify-center w-full bg-black overflow-hidden px-4 pt-15 py-20 md:min-h-screen md:py-20">
+        <section className="relative flex items-center justify-center w-full bg-black overflow-hidden py-10 px-4 pt-10 md:min-h-screen ">
             <div className="animate-orb-bounce relative flex items-center justify-center">
                 <div
                     className="relative flex items-center justify-center rounded-full"

@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer.tsx";
 import About from "./components/About.tsx";
 import SeoGeo from "./pages/SeoGeo.tsx";
 import ServiceList from "./components/services/ServiceList.tsx";
+import SeaSmo from "./pages/SeaSmo.tsx";
 // import Contact from "./components/form/Contact.tsx";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
                 {/*<Route path="/contact" element={<Contact />} />*/}
 
                 <Route path="/services/seo-geo" element={<SeoGeo />} />
-                {/*<Route path="/service/sea-smo" element={} />*/}
+                <Route path="/services/sea-smo" element={<SeaSmo />} />
             </Routes>
             <Footer/>
         </div>

@@ -1,7 +1,7 @@
 interface HeroCompProps {
     titre: string;
     desc: string;
-    autresdesc: string;
+    autresdesc?: string;
     img: string;
 }
 

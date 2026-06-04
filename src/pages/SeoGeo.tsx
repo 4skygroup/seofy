@@ -10,7 +10,7 @@ function SeoGeo() {
                 titre="SEO & GEO"
                 desc="La visibilité ne repose pas sur une suite d’actions isolées, mais sur une logique claire, construite dans le bon ordre et exécutée avec précision."
                 autresdesc="Oubliez tout ce que vous savez sur le SEO"
-                img="/seoGeo.png"
+                img="/seogeo/seoGeo.png"
             />
 
             <Section
@@ -43,23 +43,23 @@ function SeoGeo() {
             <SectionMots
                 description="Le SEO sémantique est une approche spécifique pour optimiser"
                 keywords={[
-                    { label: "MOTS-CLÉS",              rotate: -12, offsetY: 20, offsetX: "2%" },
-                    { label: "CHAMPS-LEXICAL",         rotate: -8,  offsetY: 5,  offsetX: "14%" },
+                    { label: "MOTS-CLÉS",              rotate: -20, offsetY: 20, offsetX: "2%" },
+                    { label: "CHAMPS-LEXICAL",         rotate: 0,  offsetY: 5,  offsetX: "14%" },
                     { label: "RELATION ENTRE CONCEPT", rotate: -15, offsetY: 28, offsetX: "30%" },
-                    { label: "CONTEXTE GLOBALE",       rotate: 0,   offsetY: 10, offsetX: "52%" },
-                    { label: "INTENTION DE RECHERCHE", rotate: -14, offsetY: 0,  offsetX: "72%" },
+                    { label: "CONTEXTE GLOBALE",       rotate: 0,   offsetY: 0, offsetX: "52%" },
+                    { label: "INTENTION DE RECHERCHE", rotate: 0, offsetY: 0,  offsetX: "72%" },
                 ]}
                 keywordColor="#E5E5E5"
             />
 
             <Section
-                title="Une stratégie SEA calquée sur votre ADN"
+                title="Une stratégie calquée sur votre ADN"
                 subtitle="Ne visez plus les visites, visez le chiffre d’affaires"
-                description="Le SEA traditionnel est limité sans optimisation. Notre approche est une combinaison entre acquisition rapide et performance durable :"
+                description="Le SEO traditionnel est lent.. Notre approche est une combinaison entre le référencement et le Growth Hacking :"
                 hashtags={[
-                    "Analyse du marché et des intentions de recherche",
-                    "Optimisation des budgets et des campagnes publicitaires",
-                    "Prise en compte des objectifs business et du retour sur investissement",
+                    "Analyse de marché",
+                    "Décortication des faiblesses de vos concurrents",
+                    "Prise en compte des ressources internes",
                 ]}
                 ctaLabel="Démarrez votre strategie"
                 imageSrc="/seogeo/seo3.png"
