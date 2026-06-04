@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Keyword {
     label: string;
     rotate: number;
