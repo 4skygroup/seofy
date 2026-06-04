@@ -13,14 +13,14 @@ interface SemanticSeoHeroProps {
 }
 
 const Section: React.FC<SemanticSeoHeroProps> = ({
-                                                     title,
-                                                     subtitle,
-                                                     description,
-                                                     hashtags,
-                                                     ctaLabel,
-                                                     imageSrc,
-                                                     imageAlt = "",
-                                                     imagePosition = "right",
+    title,
+    subtitle,
+    description,
+    hashtags,
+    ctaLabel,
+    imageSrc,
+    imageAlt = "",
+    imagePosition = "right",
 }) => {
 
     const navigate = useNavigate();
