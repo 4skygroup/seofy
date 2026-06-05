@@ -1,9 +1,45 @@
 import HeroComp from "../components/HeroComp.tsx";
 import Section from "../components/Section.tsx";
 import SectionMots from "../components/SectionMots.tsx";
+import { useMetaTags } from "../hooks/useMetaTags.ts";
 
 
 function SeaSmo() {
+    useMetaTags({
+        title: "SEA & SMO - Acquisition payante et Social Media | Seofy",
+        description: "Services de SEA (Search Engine Advertising) et SMO (Social Media Optimization). Campagnes publicitaires ciblées pour maximiser vos conversions.",
+        canonical: "https://seofyagency.com/services/sea-smo",
+        ogTitle: "SEA & SMO - Acquisition payante et Social Media",
+        ogDescription: "Maximisez vos conversions avec nos services SEA et SMO. Campagnes publicitaires stratégiques et optimisées.",
+        ogImage: "https://seofyagency.com/seasmo/og-image.jpg",
+        twitterTitle: "SEA & SMO - Acquisition payante et Social Media",
+        twitterDescription: "Stratégie SEA et SMO pour votre croissance",
+        structuredData: {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+                {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Accueil",
+                    item: "https://seofyagency.com/",
+                },
+                {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Services",
+                    item: "https://seofyagency.com/offres",
+                },
+                {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "SEA & SMO",
+                    item: "https://seofyagency.com/services/sea-smo",
+                },
+            ],
+        },
+    });
+
     return (
         <div className="bg-seofy-green">
             <HeroComp

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Images de la page d'accueil -->
+  <url>
+    <loc>https://seofyagency.com/</loc>
+    <image:image>
+      <image:loc>https://seofyagency.com/seasmo/hero.jpg</image:loc>
+      <image:title>Agence SEO - Seofy</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://seofyagency.com/seogeo/hero.jpg</image:loc>
+      <image:title>SEO Local - Seofy</image:title>
+    </image:image>
+  </url>
+
+  <!-- Images SEO Geo -->
+  <url>
+    <loc>https://seofyagency.com/services/seo-geo</loc>
+    <image:image>
+      <image:loc>https://seofyagency.com/seogeo/seo-geo-banner.jpg</image:loc>
+      <image:title>SEO Géographique - Optimisation locale</image:title>
+    </image:image>
+  </url>
+
+  <!-- Images SEA/SMO -->
+  <url>
+    <loc>https://seofyagency.com/services/sea-smo</loc>
+    <image:image>
+      <image:loc>https://seofyagency.com/seasmo/sea-smo-banner.jpg</image:loc>
+      <image:title>SEA et Social Media Optimization</image:title>
+    </image:image>
+  </url>
+</urlset>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://seofyagency.com/</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Offres/Services -->
+  <url>
+    <loc>https://seofyagency.com/offres</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service SEO Geo -->
+  <url>
+    <loc>https://seofyagency.com/services/seo-geo</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://seofyagency.com/seogeo/hero.jpg</image:loc>
+      <image:title>SEO Géographique - Seofy</image:title>
+    </image:image>
+  </url>
+
+  <!-- Service SEA/SMO -->
+  <url>
+    <loc>https://seofyagency.com/services/sea-smo</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://seofyagency.com/seasmo/hero.jpg</image:loc>
+      <image:title>SEA/SMO - Seofy</image:title>
+    </image:image>
+  </url>
+</urlset>

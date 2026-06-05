@@ -1,9 +1,45 @@
 import HeroComp from "../components/HeroComp.tsx";
 import Section from "../components/Section.tsx";
 import SectionMots from "../components/SectionMots.tsx";
+import { useMetaTags } from "../hooks/useMetaTags.ts";
 
 
 function SeoGeo() {
+    useMetaTags({
+        title: "SEO & GEO - Optimisation de visibilité locale | Seofy",
+        description: "Services de SEO Géographique pour améliorer votre visibilité locale. Stratégie sémantique et optimisation des algorithmes Google pour votre croissance.",
+        canonical: "https://seofyagency.com/services/seo-geo",
+        ogTitle: "SEO & GEO - Optimisation de visibilité locale",
+        ogDescription: "Augmentez votre visibilité locale avec notre stratégie de SEO Géographique. Performance organique garantie.",
+        ogImage: "https://seofyagency.com/seogeo/og-image.jpg",
+        twitterTitle: "SEO & GEO - Optimisation de visibilité locale",
+        twitterDescription: "Stratégie de SEO Géographique pour votre croissance",
+        structuredData: {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+                {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Accueil",
+                    item: "https://seofyagency.com/",
+                },
+                {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Services",
+                    item: "https://seofyagency.com/offres",
+                },
+                {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "SEO & GEO",
+                    item: "https://seofyagency.com/services/seo-geo",
+                },
+            ],
+        },
+    });
+
     return (
         <div className="bg-seofy-darkgreen">
             <HeroComp

@@ -1,0 +1,25 @@
+# Robots.txt pour SEO
+# Permet les crawlers de Google, Bing, etc.
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Disallow: /*.json$
+Disallow: /*.jsx$
+Disallow: /*.tsx$
+
+# Sitemap
+Sitemap: https://seofyagency.com/sitemap.xml
+Sitemap: https://seofyagency.com/sitemap-images.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (optionnel)
+Crawl-delay: 1

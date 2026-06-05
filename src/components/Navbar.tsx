@@ -46,7 +46,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <NavLink to="/" className="shrink-0">
-                <img src="/logoSeofy.png" alt="Seofy" className="h-9" />
+                <img src="/logoSeofy.png" alt="Seofy" loading="lazy" className="h-9" />
             </NavLink>
 
             {/* ── Desktop nav ── */}

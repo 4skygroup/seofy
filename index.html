@@ -1,10 +1,81 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <!-- Charset et Viewport -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>seofy</title>
+    
+    <!-- Favicon et PWA Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Seofy" />
+    
+    <!-- SEO de base -->
+    <title>Seofy - Agence SEO & Digital Marketing | Augmentez votre visibilité</title>
+    <meta name="description" content="Agence spécialisée en SEO, SEA et Social Media Marketing. Augmentez votre visibilité en ligne avec nos services de référencement et marketing digital." />
+    <meta name="keywords" content="SEO, référencement, agence SEO, SEA, social media, digital marketing" />
+    <meta name="author" content="Seofy" />
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://seofyagency.com/" />
+    
+    <!-- Open Graph (Réseaux sociaux) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Seofy - Agence SEO & Digital Marketing" />
+    <meta property="og:description" content="Augmentez votre visibilité en ligne avec nos services SEO, SEA et Social Media Marketing." />
+    <meta property="og:url" content="https://seofyagency.com/" />
+    <meta property="og:image" content="https://seofyagency.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Seofy" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Seofy - Agence SEO & Digital Marketing" />
+    <meta name="twitter:description" content="Augmentez votre visibilité en ligne avec nos services SEO, SEA et Social Media Marketing." />
+    <meta name="twitter:image" content="https://seofyagency.com/og-image.jpg" />
+    <meta name="twitter:site" content="@seofy" />
+    <meta name="twitter:creator" content="@seofy" />
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Seofy",
+      "url": "https://seofyagency.com",
+      "logo": "https://seofyagency.com/logo.png",
+      "description": "Agence spécialisée en SEO, SEA et Social Media Marketing",
+      "sameAs": [
+        "https://www.facebook.com/seofy",
+        "https://twitter.com/seofy",
+        "https://www.linkedin.com/company/seofy",
+        "https://www.instagram.com/seofy"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "contact@seofyagency.com",
+        "telephone": "+33XXXXXXXXX"
+      }
+    }
+    </script>
+    
+    <!-- Robots et indexation -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <!-- Préconnexion pour performances -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
   </head>
   <body>
     <div id="root"></div>

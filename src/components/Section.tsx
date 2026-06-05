@@ -28,7 +28,7 @@ const Section: React.FC<SemanticSeoHeroProps> = ({
     const imageBlock = (
         <div className="flex-shrink-0 flex justify-center items-center">
             <div className="rounded-2xl overflow-hidden w-[clamp(220px,40vw,380px)] aspect-square">
-                <img src={imageSrc} alt={imageAlt} className="w-full h-full object-cover" />
+                <img src={imageSrc} alt={imageAlt} loading="lazy" className="w-full h-full object-cover" />
             </div>
         </div>
     );

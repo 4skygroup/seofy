@@ -29,6 +29,7 @@ export default function HeroComp({ titre, desc, autresdesc, img }: HeroCompProps
                     <img
                         src={img}
                         alt={titre}
+                        loading="lazy"
                         className="w-full max-w-sm md:max-w-lg object-contain rounded-2xl"
                     />
                 </div>

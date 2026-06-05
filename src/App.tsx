@@ -4,7 +4,7 @@ import Home from "./pages/Home.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/footer/Footer.tsx";
 import SeoGeo from "./pages/SeoGeo.tsx";
-import ServiceList from "./components/services/ServiceList.tsx";
+import Offres from "./pages/Offres.tsx";
 import SeaSmo from "./pages/SeaSmo.tsx";
 // import Contact from "./components/form/Contact.tsx";
 
@@ -15,7 +15,7 @@ function App() {
             <Navbar/>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/offres" element={<ServiceList/> } />
+                <Route path="/offres" element={<Offres/> } />
                 {/*<Route path="/contact" element={<Contact />} />*/}
 
                 <Route path="/services/seo-geo" element={<SeoGeo />} />
