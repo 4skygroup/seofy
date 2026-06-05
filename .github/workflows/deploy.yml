@@ -1,0 +1,100 @@
+name: Deploy Seofy to OVH
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 1. Préparer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 2. Installer, Vérifier (Audit/Lint) et Construire
+        run: |
+          npm install
+          npm audit --audit-level=high
+          npm run lint --if-present
+          npm run build
+
+      - name: 3. Préparer le dossier sur le serveur
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            sudo mkdir -p /var/www/seofyagency.com
+            sudo chown -R ubuntu:ubuntu /var/www/seofyagency.com
+            sudo rm -rf /var/www/seofyagency.com/*
+
+      - name: 4. Envoyer les fichiers prêts au serveur
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "dist"
+          target: "/var/www/seofyagency.com/"
+          strip_components: 1
+
+      - name: 5. Sécuriser les droits pour Nginx
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            sudo chown -R www-data:www-data /var/www/seofyagency.com/
+
+      - name: 6. Configurer Nginx (si pas encore fait)
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            if [ ! -f /etc/nginx/sites-available/seofyagency.com ]; then
+              sudo tee /etc/nginx/sites-available/seofyagency.com > /dev/null << 'NGINXEOF'
+            server {
+                listen 80;
+                server_name seofyagency.com www.seofyagency.com;
+
+                root /var/www/seofyagency.com;
+                index index.html;
+
+                location / {
+                    try_files $uri $uri/ /index.html;
+                }
+
+                gzip on;
+                gzip_types text/css application/javascript image/svg+xml;
+            }
+            NGINXEOF
+            fi
+
+            if [ ! -L /etc/nginx/sites-enabled/seofyagency.com ]; then
+              sudo ln -s /etc/nginx/sites-available/seofyagency.com /etc/nginx/sites-enabled/seofyagency.com
+            fi
+
+            sudo nginx -t && sudo systemctl reload nginx
+
+      - name: 7. Activer HTTPS avec Certbot (si pas encore fait)
+        continue-on-error: true
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            if [ ! -d /etc/letsencrypt/live/seofyagency.com ]; then
+              sudo certbot --nginx -d seofyagency.com -d www.seofyagency.com \
+                --non-interactive --agree-tos -m ${{ secrets.CERTBOT_EMAIL }}
+            fi
