@@ -20,7 +20,7 @@ const SERVICES: ServiceCardProps[] = [
 export default function ServiceList() {
     return (
         <section className="flex flex-col items-center gap-10 px-6 py-16 bg-[#07242C] min-h-screen">
-            <h2 className="font-glacial text-t2 md:text-h5 text-white text-center m-0 mt-10">
+            <h2 className="font-glacial text-t2 md:text-h6 text-white text-center m-0 mt-10">
                 CE QUE NOUS FAISONS
             </h2>
 

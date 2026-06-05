@@ -11,7 +11,13 @@ export default function About() {
                                 About Us
                             </h2>
 
-                            <p className="font-glacial text-seofy-white leading-relaxed text-[10px] md:text-t5">
+                            <p
+                                className="font-glacial leading-relaxed text-[10px] md:text-t5"
+                                style={{
+                                    color: "rgba(255, 255, 255, 0.92)",
+                                    textShadow: "0 1px 4px rgba(0, 0, 0, 0.7)"
+                                }}
+                            >
                                 Il y aura un avant et un après Seofy. Nous ne faisons ni poudre aux yeux ni rapports techniques interminables. Nous sommes une agence SEO nouvelle génération, construite autour d'une obsession : le ROI.
                                 Notre équipe d'experts ne se contente pas d'améliorer votre visibilité. Nous déployons des stratégies sur mesure, exécutées sans hasard.
                                 <br/>

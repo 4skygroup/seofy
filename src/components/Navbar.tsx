@@ -1,22 +1,45 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
+
+interface SubItem {
+    label: string;
+    path: string;
+}
 
 interface NavItem {
     label: string;
     path: string;
     external?: boolean;
+    subItems?: SubItem[];
 }
 
 const navItems: NavItem[] = [
     { label: "The Group", path: "https://www.playtosky.com/", external: true },
     { label: "Home", path: "/"},
-    { label: "About",   path: "/about" },
-    { label: "Offres",   path: "/offres" },
+    {
+        label: "Offres",
+        path: "/offres",
+        subItems: [
+            { label: "Seo Geo", path: "/services/seo-geo" },
+            { label: "Sea Smo",    path: "/services/sea-smo" },
+        ],
+    },
     { label: "Contact", path: "/contact" },
 ];
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
+    const [servicesOpen, setServicesOpen] = useState<boolean>(false);
+    const [mobileServicesOpen, setMobileServicesOpen] = useState<boolean>(false);
+    const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    const handleMouseEnter = () => {
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+        setServicesOpen(true);
+    };
+    const handleMouseLeave = () => {
+        timeoutRef.current = setTimeout(() => setServicesOpen(false), 150);
+    };
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-black flex items-center justify-between px-8 py-4">
@@ -28,17 +51,20 @@ export default function Navbar() {
 
             {/* ── Desktop nav ── */}
             <ul className="hidden md:flex items-center gap-10">
-                {navItems.map(({ label, path, external}) => (
+                {navItems.map(({ label, path, external, subItems }) => (
                     <li
                         key={path}
                         className="relative"
+                        onMouseEnter={subItems ? handleMouseEnter : undefined}
+                        onMouseLeave={subItems ? handleMouseLeave : undefined}
                     >
                         {external ? (
                             <a
                                 href={path}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="font-glacial text-t5 text-white hover:text-seofy-green transition-colors duration-200"                            >
+                                className="font-glacial text-t5 text-white hover:text-seofy-green transition-colors duration-200"
+                            >
                                 {label}
                             </a>
                         ) : (
@@ -51,7 +77,36 @@ export default function Navbar() {
                                 }
                             >
                                 {label}
+                                {subItems && (
+                                    <svg
+                                        className={`w-3 h-3 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+                                    >
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                )}
                             </NavLink>
+                        )}
+
+                        {/* Dropdown desktop */}
+                        {subItems && servicesOpen && (
+                            <ul className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-black border border-white/10 rounded-md py-2 w-44 shadow-lg">
+                                {subItems.map((sub) => (
+                                    <li key={sub.path}>
+                                        <NavLink
+                                            to={sub.path}
+                                            onClick={() => setServicesOpen(false)}
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 font-glacial text-t6 transition-colors duration-200 ${
+                                                    isActive ? "text-seofy-green" : "text-white hover:text-seofy-green hover:bg-white/5"
+                                                }`
+                                            }
+                                        >
+                                            {sub.label}
+                                        </NavLink>
+                                    </li>
+                                ))}
+                            </ul>
                         )}
                     </li>
                 ))}
@@ -70,7 +125,7 @@ export default function Navbar() {
 
             {/* ── Mobile menu — ── */}
             <div
-                className={`fixed inset-0 bg-black md:hidden flex flex-col transition-all duration-300 ${
+                className={`fixed inset-0 bg-seofy-green md:hidden flex flex-col transition-all duration-300 ${
                     menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
                 }`}
                 style={{ zIndex: 40 }}
@@ -87,13 +142,13 @@ export default function Navbar() {
                 {/* Logo centré */}
                 <div className="flex justify-center mt-16 mb-12">
                     <NavLink to="/" onClick={() => setMenuOpen(false)}>
-                        <img src="/logoSeofy.png" alt="Pulse X" className="h-12" />
+                        <img src="/logoSeofy.png" alt="Seofy" className="h-12" />
                     </NavLink>
                 </div>
 
                 {/* Items centrés */}
                 <ul className="flex flex-col items-center gap-8 flex-1">
-                    {navItems.map(({ label, path, external }) => (
+                    {navItems.map(({ label, path, external, subItems }) => (
                         <li key={path} className="text-center">
                             {external ? (
                                 <a
@@ -105,6 +160,35 @@ export default function Navbar() {
                                 >
                                     {label}
                                 </a>
+                            ) : subItems ? (
+                                <div>
+                                    <button
+                                        onClick={() => setMobileServicesOpen((prev) => !prev)}
+                                        className="font-glacial text-t3 text-white flex items-center gap-2 mx-auto"
+                                    >
+                                        {label}
+                                        <svg
+                                            className={`w-4 h-4 transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+                                        >
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+
+                                    <ul className={`overflow-hidden transition-all duration-300 flex flex-col items-center gap-3 ${mobileServicesOpen ? "max-h-40 mt-4" : "max-h-0"}`}>
+                                        {subItems.map((sub) => (
+                                            <li key={sub.path}>
+                                                <NavLink
+                                                    to={sub.path}
+                                                    onClick={() => { setMenuOpen(false); setMobileServicesOpen(false); }}
+                                                    className="font-glacial text-t3 text-white/80 hover:text-white transition-colors duration-200"
+                                                >
+                                                    {sub.label}
+                                                </NavLink>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             ) : (
                                 <NavLink
                                     to={path}
