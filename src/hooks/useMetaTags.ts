@@ -93,7 +93,7 @@ export const useMetaTags = (config: MetaTagConfig) => {
       Object.entries(config.hreflang).forEach(([lang, url]) => {
         const hrefTag = document.createElement('link');
         hrefTag.rel = 'alternate';
-        hrefTag.hrefLang = lang;
+        hrefTag.hreflang = lang;
         hrefTag.href = url;
         hrefTag.setAttribute('data-page-hreflang', 'true');
         document.head.appendChild(hrefTag);

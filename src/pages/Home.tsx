@@ -2,7 +2,7 @@ import Hero from "../components/Hero.tsx";
 import ServiceList from "../components/services/ServiceList.tsx";
 import About from "../components/About.tsx";
 import Faq from "../components/faq/Faq.tsx";
-import { useMetaTags, createFAQSchema } from "../hooks/useMetaTags.ts";
+import { useMetaTags } from "../hooks/useMetaTags.ts";
 
 function Home() {
     useMetaTags({
