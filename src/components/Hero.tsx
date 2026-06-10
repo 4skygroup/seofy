@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Hero() {
+
+    const navigate = useNavigate();
+
     return (
         <section
             className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden"
@@ -23,7 +28,10 @@ export default function Hero() {
                     Social Ads and Programmatic
                 </h1>
 
-                <button className="group flex items-center gap-2 rounded-full border border-white/30 px-6 py-2.5 text-t5 font-glacial text-white/90 tracking-wide transition-all duration-300 hover:bg-white/10 hover:border-white/50">
+                <button
+                    onClick={() => navigate("/contact")}
+                    className="group flex items-center gap-2 rounded-full border border-white/30 px-6 py-2.5 text-t5 font-glacial text-white/90 tracking-wide transition-all duration-300 hover:bg-white/10 hover:border-white/50"
+                >
                     Discover our offers
                     <span className="transition-transform duration-300 group-hover:translate-x-1">&gt;</span>
                 </button>

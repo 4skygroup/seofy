@@ -1,6 +1,6 @@
 export const politique = [
-    { label: "Mentions légales", href: "/mentions-legales" },
-    { label: "Confidentialité", href: "/confidentialite" },
+    { label: "Legal Notice", href: "/mentions-legales" },
+    { label: "Privacy", href: "/confidentialite" },
 ];
 
 export const services = [
@@ -9,14 +9,14 @@ export const services = [
 ];
 
 export const entites = [
-    { label: "Visuance", href: "https://visuance.fr" },
-    { label: "Snackly", href: "https://snackly.fr" },
-    { label: "Pulse X", href: "https://pulsex.fr" },
-    { label: "Pulse X Agency", href: "https://pulsexagency.fr" },
-    { label: "CyberSky", href: "https://cybersky.fr" },
-    { label: "Drox 360", href: "https://drox360.fr" },
-    { label: "Sky To Be Media", href: "https://skytobemedia.fr" },
-    { label: "Play to sky production", href: "https://playtoskyproduction.fr" },
+    { label: "Visuance", href: "https://www.visuanceagency.com/" },
+    { label: "Snackly", href: "https://snacklyagency.com/" },
+    { label: "Pulse X", href: "https://www.pulsexagency.com/" },
+    { label: "Pulse X Agency", href: "https://www.pulsexmanagement.com/" },
+    { label: "CyberSky", href: "https://www.cyberskyagency.com/" },
+    { label: "Drox 360", href: "https://www.drox360.com/" },
+    { label: "Sky To Be Media", href: "https://www.skytobemedia.com/" },
+    { label: "Play to sky production", href: "https://www.playtoskyproductions.com/" },
 ];
 
 export const social = [

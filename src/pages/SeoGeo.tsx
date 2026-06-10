@@ -44,62 +44,62 @@ function SeoGeo() {
         <div className="bg-seofy-darkgreen">
             <HeroComp
                 titre="SEO & GEO"
-                desc="La visibilité ne repose pas sur une suite d’actions isolées, mais sur une logique claire, construite dans le bon ordre et exécutée avec précision."
-                autresdesc="Oubliez tout ce que vous savez sur le SEO"
+                desc="Visibility does not depend on a series of isolated actions, but on a clear strategy, developed in the right order and executed with precision."
+                autresdesc="Forget everything you know about SEO"
                 img="/seogeo/seoGeo.png"
             />
 
             <Section
-                title="Le SEO sémantique au service de votre croissance"
-                subtitle="Ne visez plus les visites, visez le chiffre d'affaire"
-                description="Le SEO traditionnel est lent.. Notre approche est une combinaison entre le référencement et le Growth Hacking :"
+                title="Semantic SEO to Drive Your Growth"
+                subtitle="Stop focusing on visits—focus on revenue"
+                description="Traditional SEO is slow... Our approach combines SEO with growth hacking:"
                 hashtags={[
-                    "Agilité et itération: identification des quick wins pour apporter les résultats rapides",
-                    "Data-Driven: tests, mesures, ajustement en temps réel, chaque décision est appuyée par la donnée",
+                    "Agility and Iteration: Identifying Quick Wins to Deliver Rapid Results",
+                    "Data-Driven: testing, measurement, real-time adjustments—every decision is backed by data",
                 ]}
-                ctaLabel="Démarrez votre strategie"
+                ctaLabel="Get started with your strategy"
                 imageSrc="/seogeo/seo1.png"
                 imageAlt="SEO growth chart"
             />
 
             <Section
-                title="Une maîtrise absolue des algorithmes"
-                subtitle="Google évolue constamment, nous aussi"
-                description="Nos méthodes sont testées et validées à 100%"
+                title="A thorough understanding of algorithms"
+                subtitle="Google is constantly evolving, and so are we"
+                description="Our methods are 100% tested and validated"
                 hashtags={[
-                    "Audits techniques (crawlabilité, performance, architecture)",
-                    "Optimisation de l’E-E-A-T (Experience, Expertise Autorité Fiabilité)",
+                    "Technical audits (crawlability, performance, architecture)",
+                    "Optimizing E-E-A-T (Experience, Expertise, Authority, Trustworthiness)",
                 ]}
-                ctaLabel="Maîtrisez vos algorithmes"
+                ctaLabel="Master your algorithms"
                 imageSrc="/seogeo/seo2.png"
-                imageAlt="Une stratégie SEA"
+                imageAlt="An SEA strategy"
                 imagePosition="left"
             />
 
             <SectionMots
-                description="Le SEO sémantique est une approche spécifique pour optimiser"
+                description="Semantic SEO is a specific approach to optimizing"
                 keywords={[
-                    { label: "MOTS-CLÉS",              rotate: -20, offsetY: 20, offsetX: "2%" },
-                    { label: "CHAMPS-LEXICAL",         rotate: 0,  offsetY: 5,  offsetX: "14%" },
-                    { label: "RELATION ENTRE CONCEPT", rotate: -15, offsetY: 28, offsetX: "30%" },
-                    { label: "CONTEXTE GLOBALE",       rotate: 0,   offsetY: 0, offsetX: "52%" },
-                    { label: "INTENTION DE RECHERCHE", rotate: 0, offsetY: 0,  offsetX: "72%" },
+                    { label: "KEYWORDS",              rotate: -20, offsetY: 20, offsetX: "2%" },
+                    { label: "LEXICAL FIELDS",         rotate: 0,  offsetY: 5,  offsetX: "14%" },
+                    { label: "RELATIONSHIP BETWEEN CONCEPTS", rotate: -15, offsetY: 28, offsetX: "30%" },
+                    { label: "OVERALL CONTEXT",       rotate: 0,   offsetY: 0, offsetX: "52%" },
+                    { label: "RESEARCH QUESTION", rotate: 0, offsetY: 0,  offsetX: "72%" },
                 ]}
                 keywordColor="#E5E5E5"
             />
 
             <Section
-                title="Une stratégie calquée sur votre ADN"
-                subtitle="Ne visez plus les visites, visez le chiffre d’affaires"
-                description="Le SEO traditionnel est lent.. Notre approche est une combinaison entre le référencement et le Growth Hacking :"
+                title="A strategy tailored to your unique identity"
+                subtitle="Stop focusing on visits—focus on revenue"
+                description="Traditional SEO is slow... Our approach combines SEO with growth hacking:"
                 hashtags={[
-                    "Analyse de marché",
-                    "Décortication des faiblesses de vos concurrents",
-                    "Prise en compte des ressources internes",
+                    "Market Analysis",
+                    "Analyzing Your Competitors' Weaknesses",
+                    "Consideration of internal resources",
                 ]}
-                ctaLabel="Démarrez votre strategie"
+                ctaLabel="Get started with your strategy"
                 imageSrc="/seogeo/seo3.png"
-                imageAlt="Une stratégie SEA"
+                imageAlt="An SEA strategy"
             />
 
         </div>

@@ -18,11 +18,11 @@ export default function About() {
                                     textShadow: "0 1px 4px rgba(0, 0, 0, 0.7)"
                                 }}
                             >
-                                Il y aura un avant et un après Seofy. Nous ne faisons ni poudre aux yeux ni rapports techniques interminables. Nous sommes une agence SEO nouvelle génération, construite autour d'une obsession : le ROI.
-                                Notre équipe d'experts ne se contente pas d'améliorer votre visibilité. Nous déployons des stratégies sur mesure, exécutées sans hasard.
+                                There will be a before and after Seofy. We don’t resort to gimmicks or endless technical reports. We’re a next-generation SEO agency built around a single obsession: ROI.
+                                Our team of experts doesn’t just improve your visibility. We implement tailored strategies, executed with precision.
                                 <br/>
-                                Ici, nous ne passons pas des mois à analyser, nous livrons des résultats.
-                                Que vous soyez une startup en croissance ou une entreprise souhaitant renforcer sa position, notre promesse reste la même : une explosion de trafic qualifié.
+                                Here, we don’t spend months analyzing—we deliver results.
+                                Whether you’re a growing startup or a company looking to strengthen its position, our promise remains the same: a surge in qualified traffic.
                             </p>
                         </div>
                     </div>

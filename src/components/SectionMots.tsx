@@ -14,7 +14,7 @@ interface FloatingKeywordsBannerProps {
 export default function SectionMots({ description, keywords, keywordColor }: FloatingKeywordsBannerProps) {
     return (
         <div className="w-full overflow-hidden font-glacial px-4 py-6 md:px-12 md:py-12">
-            <p className="text-t6 md:text-t5 text-white font-normal tracking-wide mb-7 md:mb-14 pl-8 md:pl-35">
+            <p className="text-t6 md:text-t4 text-white font-normal tracking-wide mb-7 md:mb-14 pl-8 md:pl-35">
                 {description}
             </p>
 

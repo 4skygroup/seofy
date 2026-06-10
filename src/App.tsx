@@ -6,7 +6,7 @@ import Footer from "./components/footer/Footer.tsx";
 import SeoGeo from "./pages/SeoGeo.tsx";
 import Offres from "./pages/Offres.tsx";
 import SeaSmo from "./pages/SeaSmo.tsx";
-// import Contact from "./components/form/Contact.tsx";
+import Contact from "./components/form/Contact.tsx";
 
 function App() {
     return (
@@ -16,7 +16,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/offres" element={<Offres/> } />
-                {/*<Route path="/contact" element={<Contact />} />*/}
+                <Route path="/contact" element={<Contact />} />
 
                 <Route path="/services/seo-geo" element={<SeoGeo />} />
                 <Route path="/services/sea-smo" element={<SeaSmo />} />

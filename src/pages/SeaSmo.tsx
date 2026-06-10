@@ -44,61 +44,61 @@ function SeaSmo() {
         <div className="bg-seofy-green">
             <HeroComp
                 titre="SEA & SMO"
-                desc="La performance publicitaire ne repose pas sur une simple diffusion d’annonces, mais sur une stratégie précise, pensée pour attirer les bonnes audiences et maximiser chaque conversion."
+                desc="Advertising performance isn't just about running ads; it's about a well-defined strategy designed to attract the right audiences and maximize every conversion."
                 img="/seasmo/sea1.png"
             />
 
             <Section
-                title="Le SEA stratégique au service de votre croissance"
-                subtitle="Ne visez plus les visites, visez le chiffre d’affaire"
-                description="Le SEA traditionnel peut devenir coûteux. Notre approche combine acquisition payante et optimisation continue :"
+                title="Strategic SEA to Drive Your Growth"
+                subtitle="Stop focusing on visits—focus on revenue"
+                description="Traditional SEA can get expensive. Our approach combines paid acquisition with ongoing optimization:"
                 hashtags={[
-                    "Ciblage précis : diffusion des annonces auprès des audiences les plus qualifiées",
-                    "Data Driven : analyse des performances, optimisation des campagnes et ajustements continus basés sur la donnée",
+                    "Precise targeting: delivering ads to the most qualified audiences",
+                    "Data-Driven: performance analysis, campaign optimization, and continuous adjustments based on data",
                 ]}
-                ctaLabel="Démarrez votre strategie"
+                ctaLabel="Get started with your strategy"
                 imageSrc="/seasmo/sea2.png"
                 imageAlt="SEO growth chart"
             />
 
             <Section
-                title="Une maîtrise absolue des algorithmes"
-                subtitle="Les plateformes publicitaires évoluent constamment, nous aussi"
-                description="Nos campagnes sont optimisées et validées à 100% :"
+                title="A thorough understanding of algorithms"
+                subtitle="Advertising platforms are constantly evolving—and so are we"
+                description="Our campaigns are fully optimized and validated:"
                 hashtags={[
-                    "Audit des campagnes (ciblage, budget, annonces, audiences)",
-                    "Optimisation des KPI (CTR, CPC, conversions, retour sur investissement)",
+                    "Campaign audit (targeting, budget, ads, audiences)",
+                    "Optimization of KPIs (CTR, CPC, conversions, ROI)",
                 ]}
-                ctaLabel="Maîtrisez vos algorithmes"
+                ctaLabel="Master your algorithms"
                 imageSrc="/seogeo/seo2.png"
-                imageAlt="Une stratégie SEA"
+                imageAlt="An SEA strategy"
                 imagePosition="left"
             />
 
             <SectionMots
-                description="Le SEA stratégique est une approche spécifique pour maximiser"
+                description="Strategic SEA is a specific approach to maximizing"
                 keywords={[
-                    { label: "CAMPAGNES CIBLÉES",      rotate: -20, offsetY: 20, offsetX: "2%" },
-                    { label: "AUDIENCES QUALIFIÉES",   rotate: 0,  offsetY: 5,  offsetX: "14%" },
-                    { label: "INTENTION D’ACHAT",      rotate: -15, offsetY: 28, offsetX: "30%" },
-                    { label: "VISIBILITÉ IMMÉDIATE",   rotate: 0,   offsetY: 0, offsetX: "52%" },
+                    { label: "TARGETED CAMPAIGNS",      rotate: -20, offsetY: 20, offsetX: "2%" },
+                    { label: "TARGET AUDIENCES",   rotate: 0,  offsetY: 5,  offsetX: "14%" },
+                    { label: "PURCHASE INTENTION",      rotate: -15, offsetY: 28, offsetX: "30%" },
+                    { label: "IMMEDIATE VISIBILITY",   rotate: 0,   offsetY: 0, offsetX: "52%" },
                     { label: "CONVERSIONS",            rotate: 0, offsetY: 0,  offsetX: "72%" },
                 ]}
                 keywordColor="#164D55"
             />
 
             <Section
-                title="Une stratégie SEA calquée sur votre ADN"
-                subtitle="Ne visez plus les visites, visez le chiffre d’affaires"
-                description="Le SEA traditionnel est limité sans optimisation. Notre approche est une combinaison entre acquisition rapide et performance durable :"
+                title="An SEA strategy tailored to your company’s unique identity"
+                subtitle="Stop focusing on visits—focus on revenue"
+                description="Traditional SEA has its limitations without optimization. Our approach combines rapid acquisition with sustainable performance:"
                 hashtags={[
-                    "Analyse du marché et des intentions de recherche",
-                    "Optimisation des budgets et des campagnes publicitaires",
-                    "Prise en compte des objectifs business et du retour sur investissement",
+                    "Market Analysis and Search Intent",
+                    "Optimizing Budgets and Advertising Campaigns",
+                    "Taking business objectives and return on investment into account",
                 ]}
-                ctaLabel="Démarrez votre strategie"
+                ctaLabel="Get started with your strategy"
                 imageSrc="/seasmo/sea4.png"
-                imageAlt="Une stratégie SEA"
+                imageAlt="An SEA strategy"
             />
 
         </div>

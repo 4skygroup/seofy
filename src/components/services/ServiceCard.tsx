@@ -42,9 +42,9 @@ export default function ServiceCard({
                 <button
                     type="button"
                     onClick={() => navigate(href)}
-                    className="mt-3 px-5 py-1.5 rounded-full bg-seofy-btn-darkgreen text-seofy-white font-glacial text-t6 md:text-t5 cursor-pointer transition-colors duration-200 hover:bg-seofy-darkgreen border-0"
+                    className="mt-3 px-5 py-1.5 rounded-full bg-seofy-btn-darkgreen text-seofy-white font-glacial text-t6 md:text-t6 cursor-pointer transition-colors duration-200 hover:bg-seofy-darkgreen border-0"
                 >
-                    En savoir plus
+                    Learn more
                 </button>
             </div>
         </div>
