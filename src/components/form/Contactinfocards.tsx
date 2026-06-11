@@ -38,12 +38,11 @@ export default function ContactInfoCards() {
                 </div>
             ))}
 
-            {/* Logo JAWS */}
             <div className="mt-2 flex items-center gap-3">
                 {/* Remplace le src par le chemin de ton image */}
                 <img
                     src="/logoSeofy.png"
-                    alt="Jaws"
+                    alt=""
                     className="h-8 w-auto object-contain"
                     style={{ filter: "brightness(0) invert(1)" }}
                 />
