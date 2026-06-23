@@ -1,7 +1,7 @@
 import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
-const FORMSPREE = "https://formspree.io/f/XXXXXXXX";
+const FORMSPREE = "";
 
 type Tab = "callback" | "message";
 
@@ -174,10 +174,10 @@ function MessageForm() {
             </div>
 
             {status === "sent" && (
-                <p className="text-sm text-green-400 text-center">✅ Message envoyé avec succès !</p>
+                <p className="text-sm text-green-400 text-center">Message envoyé avec succès !</p>
             )}
             {status === "error" && (
-                <p className="text-sm text-red-400 text-center">❌ Une erreur est survenue. Réessaie.</p>
+                <p className="text-sm text-red-400 text-center">Une erreur est survenue. Réessaie.</p>
             )}
 
             <button

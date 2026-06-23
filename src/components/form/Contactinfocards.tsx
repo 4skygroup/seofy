@@ -39,7 +39,6 @@ export default function ContactInfoCards() {
             ))}
 
             <div className="mt-2 flex items-center gap-3">
-                {/* Remplace le src par le chemin de ton image */}
                 <img
                     src="/logoSeofy.png"
                     alt=""
