@@ -9,7 +9,6 @@ import SeaSmo from "./pages/SeaSmo.tsx";
 import Contact from "./components/form/Contact.tsx";
 import MentionsLegales from "./pages/MentionsLegales.tsx";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
-import Locations from "./pages/Locations.tsx";
 
 function App() {
     return (
@@ -21,7 +20,6 @@ function App() {
                 <Route path="/offres" element={<Offres/> } />
                 <Route path="/contact" element={<Contact />} />
 
-                <Route path="/location" element={<Locations />} />
                 <Route path="/mentions-legales" element={<MentionsLegales />} />
                 <Route path="/confidentialite" element={<PolitiqueConfidentialite/>} />
                 <Route path="/services/seo-geo" element={<SeoGeo />} />
