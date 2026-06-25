@@ -7,20 +7,38 @@ export interface FAQItem {
 export const faqData: FAQItem[] = [
     {
         id: 1,
-        question: "Why entrust your social media to Pulse X?",
+        question: "How long does it take to see SEO results?",
         answer:
-            "Because an effective social media presence can’t be improvised. From strategy and content creation to advertising and analytics, every step matters. Pulse X brings all these areas of expertise together within a single team, with a constant commitment to quality. You benefit from consistent management of all your social media channels—Instagram, TikTok, and beyond—rather than scattered efforts.",
+            "SEO is a medium to long-term strategy. In general, the first results start to appear between 3 and 6 months, depending on the competition, the current state of your site, and the actions implemented. More significant gains, in traffic, rankings, and conversions, typically consolidate between 6 and 12 months. SEO is a lasting investment that continues to deliver results over time.",
     },
     {
         id: 2,
-        question: "What services does Pulse X offer?",
+        question: "What budget should I plan for SEO?",
         answer:
-            "Pulse X covers your entire social media presence: editorial strategy, content creation, account management, digital advertising (Meta Ads, TikTok Ads), community engagement, and performance reporting. From conception to distribution, your communication is managed end-to-end, with a consistent voice across every platform.",
+            "The budget depends on several factors: the size of your site, the level of competition in your market, your objectives, and the level of support you need. Since every project is unique, a personalised analysis is essential to propose a strategy tailored to your situation.",
     },
     {
         id: 3,
-        question: "How does Pulse X grow my visibility and audience?",
+        question: "What is the difference between SEO and SEA?",
         answer:
-            "Our approach is based on data and iteration. We define your positioning, build a distinctive editorial strategy, and then produce content designed to maximize reach and engagement. Every action is measured, analyzed, and adjusted. The goal isn’t just to rack up numbers, but to build a qualified, engaged audience that generates value.",
+            "SEO (organic search) involves optimising your site to appear in Google's natural results, it's a sustainable strategy that generates traffic over the long term. SEA (paid search) relies on advertising such as Google Ads, delivering immediate results that stop as soon as you pause your budget. SEO is a long-term investment, SEA delivers quick but temporary results. Both are complementary and work best together to maximise your visibility.",
+    },
+    {
+        id: 4,
+        question: "Do you work with all platforms?",
+        answer:
+            "Yes, we work with the majority of platforms: WordPress, Shopify, Webflow, as well as custom-built sites. Our approach adapts to your technical environment to ensure effective optimisations, regardless of your CMS.",
+    },
+    {
+        id: 5,
+        question: "Do you need a blog for SEO?",
+        answer:
+            "A blog is not mandatory, but it is strongly recommended. It allows you to target more keywords, attract qualified traffic, and strengthen your authority on Google. It is an excellent lever for growing your visibility, especially for informational queries.",
+    },
+    {
+        id: 6,
+        question: "How does an SEO engagement work?",
+        answer:
+            "An SEO engagement unfolds in several steps: a full audit covering technical, content, and competitive aspects; definition of an SEO strategy tailored to your objectives; technical and semantic optimisations; content creation and optimisation; netlinking to build your site's authority; and finally, monthly monitoring and adjustments with clear reporting. The goal is to durably improve your visibility, traffic, and conversions.",
     },
 ];

@@ -4,8 +4,8 @@ export const politique = [
 ];
 
 export const services = [
-    { label: "SEO & GEO", href: "/seogeo" },
-    { label: "SEA & SMO", href: "/seasmo" },
+    { label: "SEO & GEO", href: "/services/seo-geo" },
+    { label: "SEA & SMO", href: "/services/sea-smo" },
 ];
 
 export const entites = [

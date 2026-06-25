@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
+import {Globe} from "lucide-react";
 
 interface SubItem {
     label: string;
@@ -43,6 +44,24 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-black flex items-center justify-between px-8 py-4">
+
+            {/* Gauche */}
+            <div className="flex items-center gap-10">
+                <NavLink
+                    to="/en"
+                    className="hidden md:flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full font-glacial text-t6 hover:bg-white/90 transition"
+                >
+                    <Globe className="w-4 h-4" />
+                    English
+                </NavLink>
+
+                <NavLink
+                    to="/location"
+                    className="hidden md:flex items-center gap-2 text-white hover:text-seofy-green transition-colors"
+                >
+                    Location
+                </NavLink>
+            </div>
 
             {/* Logo */}
             <NavLink to="/" className="shrink-0">

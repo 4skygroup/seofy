@@ -1,7 +1,7 @@
 import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
-const FORMSPREE = "";
+const FORMSPREE = "contact@seofyagency.com";
 
 type Tab = "callback" | "message";
 
@@ -68,6 +68,7 @@ function CallbackForm() {
     const [tel, setTel] = useState("");
     const [sujet, setSujet] = useState("");
     const [horaire, setHoraire] = useState("");
+    const [date, setDate] = useState("");
     const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -77,7 +78,7 @@ function CallbackForm() {
         const res = await fetch(FORMSPREE, {
             method: "POST",
             headers: { "Content-Type": "application/json", Accept: "application/json" },
-            body: JSON.stringify({ nom, prenom, tel, sujet, horaire }),
+            body: JSON.stringify({ nom, prenom, tel, sujet, horaire, date, }),
         });
 
         if (res.ok) {
@@ -87,6 +88,7 @@ function CallbackForm() {
             setTel("");
             setSujet("");
             setHoraire("");
+            setDate("");
         } else {
             setStatus("error");
         }
@@ -101,6 +103,7 @@ function CallbackForm() {
             <Field label="Numéro de téléphone" placeholder="+33 6 12 34 56 78" type="tel" value={tel} onChange={setTel} />
             <SelectField label="Sujet" options={subjects} value={sujet} onChange={setSujet} />
             <SelectField label="Horaire de l'appel" options={timeSlots} value={horaire} onChange={setHoraire} />
+            <Field label="Jour de l'appel" placeholder="" type="date" value={date} onChange={setDate} />
 
             {status === "sent" && (
                 <p className="text-sm text-green-400 text-center">Demande envoyée avec succès !</p>
@@ -115,7 +118,7 @@ function CallbackForm() {
                 className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-white py-3 text-sm font-semibold text-black transition hover:bg-white/90 active:scale-[0.98] disabled:opacity-50"
             >
                 <Phone className="w-4 h-4" />
-                {status === "sending" ? "Envoi…" : "Demander un rappel"}
+                {status === "sending" ? "Envoi…" : "Programmer l’appel"}
             </button>
         </form>
     );
@@ -136,7 +139,7 @@ function MessageForm() {
         const res = await fetch(FORMSPREE, {
             method: "POST",
             headers: { "Content-Type": "application/json", Accept: "application/json" },
-            body: JSON.stringify({ nom, prenom, email, sujet, message }),
+            body: JSON.stringify({ nom, prenom, email, sujet, message, }),
         });
 
         if (res.ok) {
@@ -209,7 +212,7 @@ function Field({label, placeholder, type = "text", value, onChange,}: {
                 placeholder={placeholder}
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
-                className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white placeholder:text-white/25 outline-none transition focus:border-white/30 focus:bg-white/8"
+                className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white placeholder:text-white/25 outline-none transition focus:border-white/30 focus:bg-white/8 [color-scheme:dark]"
             />
         </div>
     );

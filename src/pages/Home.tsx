@@ -3,6 +3,9 @@ import ServiceList from "../components/services/ServiceList.tsx";
 import About from "../components/About.tsx";
 import Faq from "../components/faq/Faq.tsx";
 import { useMetaTags } from "../hooks/useMetaTags.ts";
+import WhyUs from "../components/WhyUs.tsx";
+import Cta from "../components/Cta.tsx";
+import StatsList from "../components/zoneReassurance/StatsList.tsx";
 
 function Home() {
     useMetaTags({
@@ -31,11 +34,14 @@ function Home() {
     });
 
     return (
-        <div className="">
+        <div className="bg-seofy-darkgreen">
             <Hero />
             <About />
+            <WhyUs />
             <ServiceList />
+            <StatsList />
             <Faq />
+            <Cta />
         </div>
     );
 }

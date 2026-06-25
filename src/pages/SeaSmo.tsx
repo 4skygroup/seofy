@@ -45,7 +45,7 @@ function SeaSmo() {
             <HeroComp
                 titre="SEA & SMO"
                 desc="Advertising performance isn't just about running ads; it's about a well-defined strategy designed to attract the right audiences and maximize every conversion."
-                img="/seasmo/sea1.png"
+                img="/seasmo/sea1.webp"
             />
 
             <Section
@@ -57,7 +57,7 @@ function SeaSmo() {
                     "Data-Driven: performance analysis, campaign optimization, and continuous adjustments based on data",
                 ]}
                 ctaLabel="Get started with your strategy"
-                imageSrc="/seasmo/sea2.png"
+                imageSrc="/seasmo/sea2.webp"
                 imageAlt="SEO growth chart"
             />
 
@@ -70,7 +70,7 @@ function SeaSmo() {
                     "Optimization of KPIs (CTR, CPC, conversions, ROI)",
                 ]}
                 ctaLabel="Master your algorithms"
-                imageSrc="/seogeo/seo2.png"
+                imageSrc="/seasmo/sea3.webp"
                 imageAlt="An SEA strategy"
                 imagePosition="left"
             />
@@ -97,7 +97,7 @@ function SeaSmo() {
                     "Taking business objectives and return on investment into account",
                 ]}
                 ctaLabel="Get started with your strategy"
-                imageSrc="/seasmo/sea4.png"
+                imageSrc="/seasmo/sea4.webp"
                 imageAlt="An SEA strategy"
             />
 

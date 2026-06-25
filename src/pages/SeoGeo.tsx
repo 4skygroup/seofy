@@ -46,7 +46,7 @@ function SeoGeo() {
                 titre="SEO & GEO"
                 desc="Visibility does not depend on a series of isolated actions, but on a clear strategy, developed in the right order and executed with precision."
                 autresdesc="Forget everything you know about SEO"
-                img="/seogeo/seoGeo.png"
+                img="/seogeo/seoGeo.webp"
             />
 
             <Section
@@ -58,7 +58,7 @@ function SeoGeo() {
                     "Data-Driven: testing, measurement, real-time adjustments—every decision is backed by data",
                 ]}
                 ctaLabel="Get started with your strategy"
-                imageSrc="/seogeo/seo1.png"
+                imageSrc="/seogeo/seo1.webp"
                 imageAlt="SEO growth chart"
             />
 
@@ -71,7 +71,7 @@ function SeoGeo() {
                     "Optimizing E-E-A-T (Experience, Expertise, Authority, Trustworthiness)",
                 ]}
                 ctaLabel="Master your algorithms"
-                imageSrc="/seogeo/seo2.png"
+                imageSrc="/seogeo/seo2.webp"
                 imageAlt="An SEA strategy"
                 imagePosition="left"
             />
@@ -98,7 +98,7 @@ function SeoGeo() {
                     "Consideration of internal resources",
                 ]}
                 ctaLabel="Get started with your strategy"
-                imageSrc="/seogeo/seo3.png"
+                imageSrc="/seogeo/seo3.webp"
                 imageAlt="An SEA strategy"
             />
 

@@ -7,6 +7,8 @@ import SeoGeo from "./pages/SeoGeo.tsx";
 import Offres from "./pages/Offres.tsx";
 import SeaSmo from "./pages/SeaSmo.tsx";
 import Contact from "./components/form/Contact.tsx";
+import MentionsLegales from "./pages/MentionsLegales.tsx";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 
 function App() {
     return (
@@ -18,6 +20,9 @@ function App() {
                 <Route path="/offres" element={<Offres/> } />
                 <Route path="/contact" element={<Contact />} />
 
+                {/*<Route path="/localisation" element={} />*/}
+                <Route path="/mentions-legales" element={<MentionsLegales />} />
+                <Route path="/confidentialite" element={<PolitiqueConfidentialite/>} />
                 <Route path="/services/seo-geo" element={<SeoGeo />} />
                 <Route path="/services/sea-smo" element={<SeaSmo />} />
             </Routes>
