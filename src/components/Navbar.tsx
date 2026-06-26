@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
-import {Globe} from "lucide-react";
+import {Globe, MapPin} from "lucide-react";
 
 interface SubItem {
     label: string;
@@ -16,7 +16,6 @@ interface NavItem {
 
 const navItems: NavItem[] = [
     { label: "The Group", path: "https://www.playtosky.com/", external: true },
-    { label: "Home", path: "/"},
     {
         label: "Offres",
         path: "/offres",
@@ -59,7 +58,7 @@ export default function Navbar() {
                     to="/location"
                     className="hidden md:flex items-center gap-2 text-white hover:text-seofy-green transition-colors"
                 >
-                    Location
+                    <MapPin className="w-5 h-5" />
                 </NavLink>
             </div>
 
