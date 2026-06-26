@@ -39,6 +39,21 @@ const locationArcs: ArcData[] = typedLocations.map((location, index) => {
     };
 });
 
+interface GlobeControls {
+    autoRotate: boolean;
+    autoRotateSpeed: number;
+    enableDamping: boolean;
+    dampingFactor: number;
+}
+
+interface GlobeInstance {
+    controls: () => GlobeControls;
+    pointOfView: (
+        coords: { lat: number; lng: number; altitude: number },
+        duration: number,
+    ) => void;
+}
+
 interface Dimensions {
     width: number;
     height: number;
@@ -47,10 +62,11 @@ interface Dimensions {
 export default function GlobeMap(): React.JSX.Element {
     const containerRef = useRef<HTMLDivElement | null>(null);
 
-    // react-globe.gl ne fournit pas toujours des types complets
-    const globeRef = useRef<any>(null);
+    const globeRef = useRef<GlobeInstance | null>(null);
 
-    const [Globe, setGlobe] = useState<React.ComponentType<any> | null>(null);
+    const [Globe, setGlobe] = useState<React.ComponentType<
+        Record<string, unknown>
+    > | null>(null);
 
     const [dimensions, setDimensions] = useState<Dimensions>({
         width: 0,
