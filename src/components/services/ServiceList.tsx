@@ -4,14 +4,14 @@ const SERVICES: ServiceCardProps[] = [
     {
         title: "SEO & GEO",
         subtitle: "Boost your organic visibility, dominate search results, and attract qualified traffic.",
-        imageSrc: "/seo.jpg",
+        imageSrc: "/seo.webp",
         imageAlt: "SEO & GEO illustration",
         href: "/services/seo-geo",
     },
     {
         title: "SEA & SMO",
         subtitle: "Effective advertising and social media campaigns to drive more traffic, engagement, and conversions.",
-        imageSrc: "/sea.jpg",
+        imageSrc: "/sea.webp",
         imageAlt: "SEA & SMO illustration",
         href: "/services/sea-smo",
     },

@@ -256,7 +256,7 @@ export default function GlobeMap(): React.JSX.Element {
                     <div className="badge">{selected.label}</div>
 
                     <div className="agent">
-                        <span>AGENT LOCAL</span>
+                        <span>LOCAL AGENT</span>
                         <strong>{selected.agent}</strong>
                         <p>{selected.phone}</p>
                     </div>

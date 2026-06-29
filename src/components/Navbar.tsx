@@ -17,11 +17,11 @@ interface NavItem {
 const navItems: NavItem[] = [
     { label: "The Group", path: "https://www.playtosky.com/", external: true },
     {
-        label: "Offres",
+        label: "Offers",
         path: "/offres",
         subItems: [
-            { label: "Seo Geo", path: "/services/seo-geo" },
-            { label: "Sea Smo",    path: "/services/sea-smo" },
+            { label: "SEO / GEO", path: "/services/seo-geo" },
+            { label: "SEA / SMO", path: "/services/sea-smo" },
         ],
     },
     { label: "Contact", path: "/contact" },
@@ -44,11 +44,11 @@ export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-black flex items-center justify-between px-8 py-4">
 
-            {/* Gauche */}
-            <div className="flex items-center gap-10">
+            {/* Gauche (desktop uniquement) */}
+            <div className="hidden md:flex items-center gap-10">
                 <NavLink
                     to="/en"
-                    className="hidden md:flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full font-glacial text-t6 hover:bg-white/90 transition"
+                    className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full font-glacial text-t6 hover:bg-white/90 transition"
                 >
                     <Globe className="w-4 h-4" />
                     English
@@ -56,15 +56,18 @@ export default function Navbar() {
 
                 <NavLink
                     to="/location"
-                    className="hidden md:flex items-center gap-2 text-white hover:text-seofy-green transition-colors"
+                    className="flex items-center gap-2 text-white hover:text-seofy-green transition-colors"
                 >
                     <MapPin className="w-5 h-5" />
                 </NavLink>
             </div>
 
-            {/* Logo */}
-            <NavLink to="/" className="shrink-0">
-                <img src="/logoSeofy.png" alt="Seofy" loading="lazy" className="h-9" />
+            {/* Logo : centré par rapport au header en desktop */}
+            <NavLink
+                to="/"
+                className="shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2"
+            >
+                <img src="/logoSeofy.webp" alt="Seofy" loading="lazy" className="h-9" />
             </NavLink>
 
             {/* ── Desktop nav ── */}
@@ -160,7 +163,27 @@ export default function Navbar() {
                 {/* Logo centré */}
                 <div className="flex justify-center mt-16 mb-12">
                     <NavLink to="/" onClick={() => setMenuOpen(false)}>
-                        <img src="/logoSeofy.png" alt="Seofy" className="h-12" />
+                        <img src="/logoSeofy.webp" alt="Seofy" className="h-12" />
+                    </NavLink>
+                </div>
+
+                {/* Langue + localisation (mobile) */}
+                <div className="flex items-center justify-center gap-4 mb-10">
+                    <NavLink
+                        to="/en"
+                        onClick={() => setMenuOpen(false)}
+                        className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full font-glacial text-t6"
+                    >
+                        <Globe className="w-4 h-4" />
+                        English
+                    </NavLink>
+
+                    <NavLink
+                        to="/location"
+                        onClick={() => setMenuOpen(false)}
+                        className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-white"
+                    >
+                        <MapPin className="w-5 h-5" />
                     </NavLink>
                 </div>
 

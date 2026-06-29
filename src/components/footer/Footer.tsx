@@ -39,7 +39,7 @@ const Footer = () => {
                 {/* Logo */}
                 <div className="flex justify-center mb-10">
                     <a href="/" aria-label="Seofy – Accueil">
-                        <img className="h-12" src="/logoSeofy.png" alt="Seofy" loading="lazy" />
+                        <img className="h-12" src="/logoSeofy.webp" alt="Seofy" loading="lazy" />
                     </a>
                 </div>
 
@@ -97,7 +97,7 @@ const Footer = () => {
                         rel="noopener noreferrer"
                     >
                         <img
-                            src="/visuance.png"
+                            src="/visuance.webp"
                             alt="Visuance logo"
                             loading="lazy"
                             className="h-4 cursor-pointer"
@@ -112,7 +112,7 @@ const Footer = () => {
                         rel="noopener noreferrer"
                     >
                         <img
-                            src="/play-to-sky.png"
+                            src="/play-to-sky.webp"
                             alt="Play To Sky logo"
                             loading="lazy"
                             className="h-6 cursor-pointer"

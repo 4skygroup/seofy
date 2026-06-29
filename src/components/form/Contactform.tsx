@@ -1,7 +1,7 @@
 import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
-const FORMSPREE = "contact@seofyagency.com";
+const FORMSPREE = "https://formspree.io/f/xykqweqr";
 
 type Tab = "callback" | "message";
 
@@ -39,7 +39,7 @@ export default function ContactForm() {
                     }`}
                 >
                     <Phone className="w-4 h-4" />
-                    Se faire rappeler
+                    Request a callback
                 </button>
                 <button
                     onClick={() => setActiveTab("message")}
@@ -50,7 +50,7 @@ export default function ContactForm() {
                     }`}
                 >
                     <Mail className="w-4 h-4" />
-                    Envoyer un message
+                    Send a message
                 </button>
             </div>
 
@@ -97,19 +97,19 @@ function CallbackForm() {
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <Field label="Nom" placeholder="Dupont" value={nom} onChange={setNom} />
-                <Field label="Prénom" placeholder="Jean" value={prenom} onChange={setPrenom} />
+                <Field label="Last Name" placeholder="Dupont" value={nom} onChange={setNom} />
+                <Field label="First Name" placeholder="Jean" value={prenom} onChange={setPrenom} />
             </div>
-            <Field label="Numéro de téléphone" placeholder="+33 6 12 34 56 78" type="tel" value={tel} onChange={setTel} />
-            <SelectField label="Sujet" options={subjects} value={sujet} onChange={setSujet} />
-            <SelectField label="Horaire de l'appel" options={timeSlots} value={horaire} onChange={setHoraire} />
-            <Field label="Jour de l'appel" placeholder="" type="date" value={date} onChange={setDate} />
+            <Field label="Phone number" placeholder="+33 6 12 34 56 78" type="tel" value={tel} onChange={setTel} />
+            <SelectField label="Topic" options={subjects} value={sujet} onChange={setSujet} />
+            <SelectField label="Call Schedule" options={timeSlots} value={horaire} onChange={setHoraire} />
+            <Field label="Recruitment Day" placeholder="" type="date" value={date} onChange={setDate} />
 
             {status === "sent" && (
-                <p className="text-sm text-green-400 text-center">Demande envoyée avec succès !</p>
+                <p className="text-sm text-green-400 text-center">Request sent successfully!</p>
             )}
             {status === "error" && (
-                <p className="text-sm text-red-400 text-center">Une erreur est survenue. Réessaie.</p>
+                <p className="text-sm text-red-400 text-center">An error has occurred. Please try again.</p>
             )}
 
             <button
@@ -118,7 +118,7 @@ function CallbackForm() {
                 className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-white py-3 text-sm font-semibold text-black transition hover:bg-white/90 active:scale-[0.98] disabled:opacity-50"
             >
                 <Phone className="w-4 h-4" />
-                {status === "sending" ? "Envoi…" : "Programmer l’appel"}
+                {status === "sending" ? "Sending…" : "Schedule the call"}
             </button>
         </form>
     );
@@ -157,11 +157,11 @@ function MessageForm() {
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <Field label="Nom" placeholder="Nom" value={nom} onChange={setNom} />
-                <Field label="Prénom" placeholder="Prénom" value={prenom} onChange={setPrenom} />
+                <Field label="Last Name" placeholder="Nom" value={nom} onChange={setNom} />
+                <Field label="First Name" placeholder="Prénom" value={prenom} onChange={setPrenom} />
             </div>
             <Field label="Email" placeholder="jean@exemple.com" type="email" value={email} onChange={setEmail} />
-            <SelectField label="Sujet" options={subjects} value={sujet} onChange={setSujet} />
+            <SelectField label="Topic" options={subjects} value={sujet} onChange={setSujet} />
 
             <div className="flex flex-col gap-1.5">
                 <label className="text-t6 font-medium uppercase tracking-widest text-white/50">
@@ -169,7 +169,7 @@ function MessageForm() {
                 </label>
                 <textarea
                     rows={4}
-                    placeholder="Dites-nous en quoi nous pouvons vous aider…"
+                    placeholder="Tell us how we can help you…"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white placeholder:text-white/25 outline-none transition focus:border-white/30 focus:bg-white/8"
@@ -177,10 +177,10 @@ function MessageForm() {
             </div>
 
             {status === "sent" && (
-                <p className="text-sm text-green-400 text-center">Message envoyé avec succès !</p>
+                <p className="text-sm text-green-400 text-center">Message sent successfully!</p>
             )}
             {status === "error" && (
-                <p className="text-sm text-red-400 text-center">Une erreur est survenue. Réessaie.</p>
+                <p className="text-sm text-red-400 text-center">An error has occurred. Please try again.</p>
             )}
 
             <button
@@ -189,7 +189,7 @@ function MessageForm() {
                 className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-white py-3 text-t5 font-semibold text-black transition hover:bg-white/90 active:scale-[0.98] disabled:opacity-50"
             >
                 <Mail className="w-4 h-4" />
-                {status === "sending" ? "Envoi…" : "Envoyer le message"}
+                {status === "sending" ? "Sending…" : "Send the message"}
             </button>
         </form>
     );
@@ -235,7 +235,7 @@ function SelectField({label, options, value, onChange,}: {
                 className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white outline-none transition focus:border-white/30 focus:bg-white/8"
             >
                 <option value="" disabled className="bg-[#111] text-white/50">
-                    Sélectionner…
+                    Select…
                 </option>
                 {options.map((o) => (
                     <option key={o} value={o} className="bg-[#111] text-white">

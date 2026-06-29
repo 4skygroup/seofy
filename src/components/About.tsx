@@ -12,7 +12,7 @@ export default function About() {
                             </h2>
 
                             <p
-                                className="font-glacial leading-relaxed text-[10px] md:text-t5"
+                                className="font-glacial leading-relaxed text-t7 md:text-t5"
                                 style={{
                                     color: "rgba(255, 255, 255, 0.92)",
                                     textShadow: "0 1px 4px rgba(0, 0, 0, 0.7)"

@@ -10,11 +10,10 @@ export default function Contact() {
                 <div className="flex flex-col gap-10">
                     <div>
                         <h2 className="text-t3 font-bold leading-tight tracking-tight text-white md:text-h6">
-                            Construisons votre croissance ensemble
+                            Let's build your growth together
                         </h2>
                         <p className="mt-4 max-w-md text-base leading-relaxed text-white/50">
-                            Nos experts vous accompagnent dans la définition d'une stratégie digitale alignée sur vos objectifs. Contactez-nous selon le mode d'échange qui vous convient le mieux.
-                        </p>
+                            Our experts will help you develop a digital strategy aligned with your goals. Contact us using the method that works best for you.                        </p>
                     </div>
 
                     <ContactInfoCards />
