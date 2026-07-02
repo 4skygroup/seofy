@@ -1,29 +1,13 @@
 import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const FORMSPREE = "https://formspree.io/f/xykqweqr";
 
 type Tab = "callback" | "message";
 
-const timeSlots = [
-    "9h30 – 10h30",
-    "10h30 – 11h30",
-    "11h30 – 12h30",
-    "14h00 – 15h00",
-    "15h00 – 16h00",
-    "16h00 – 17h00",
-    "17h00 – 18h00",
-];
-
-const subjects = [
-    "SEO & Référencement",
-    "Social Ads",
-    "Content Marketing",
-    "Analytics",
-    "Autre",
-];
-
 export default function ContactForm() {
+    const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState<Tab>("callback");
 
     return (
@@ -39,7 +23,7 @@ export default function ContactForm() {
                     }`}
                 >
                     <Phone className="w-4 h-4" />
-                    Request a callback
+                    {t("contact.form.tabs.callback")}
                 </button>
                 <button
                     onClick={() => setActiveTab("message")}
@@ -50,7 +34,7 @@ export default function ContactForm() {
                     }`}
                 >
                     <Mail className="w-4 h-4" />
-                    Send a message
+                    {t("contact.form.tabs.message")}
                 </button>
             </div>
 
@@ -63,6 +47,10 @@ export default function ContactForm() {
 }
 
 function CallbackForm() {
+    const { t } = useTranslation();
+    const subjects = t("contact.form.subjects", { returnObjects: true }) as string[];
+    const timeSlots = t("contact.form.timeSlots", { returnObjects: true }) as string[];
+
     const [nom, setNom] = useState("");
     const [prenom, setPrenom] = useState("");
     const [tel, setTel] = useState("");
@@ -97,19 +85,19 @@ function CallbackForm() {
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <Field label="Last Name" placeholder="Dupont" value={nom} onChange={setNom} />
-                <Field label="First Name" placeholder="Jean" value={prenom} onChange={setPrenom} />
+                <Field label={t("contact.form.callback.nom")} placeholder={t("contact.form.callback.nomPlaceholder")} value={nom} onChange={setNom} />
+                <Field label={t("contact.form.callback.prenom")} placeholder={t("contact.form.callback.prenomPlaceholder")} value={prenom} onChange={setPrenom} />
             </div>
-            <Field label="Phone number" placeholder="+33 6 12 34 56 78" type="tel" value={tel} onChange={setTel} />
-            <SelectField label="Topic" options={subjects} value={sujet} onChange={setSujet} />
-            <SelectField label="Call Schedule" options={timeSlots} value={horaire} onChange={setHoraire} />
-            <Field label="Recruitment Day" placeholder="" type="date" value={date} onChange={setDate} />
+            <Field label={t("contact.form.callback.phone")} placeholder={t("contact.form.callback.phonePlaceholder")} type="tel" value={tel} onChange={setTel} />
+            <SelectField label={t("contact.form.callback.subject")} options={subjects} value={sujet} onChange={setSujet} />
+            <SelectField label={t("contact.form.callback.time")} options={timeSlots} value={horaire} onChange={setHoraire} />
+            <Field label={t("contact.form.callback.date")} placeholder="" type="date" value={date} onChange={setDate} />
 
             {status === "sent" && (
-                <p className="text-sm text-green-400 text-center">Request sent successfully!</p>
+                <p className="text-sm text-green-400 text-center">{t("contact.form.callback.success")}</p>
             )}
             {status === "error" && (
-                <p className="text-sm text-red-400 text-center">An error has occurred. Please try again.</p>
+                <p className="text-sm text-red-400 text-center">{t("contact.form.callback.error")}</p>
             )}
 
             <button
@@ -118,13 +106,16 @@ function CallbackForm() {
                 className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-white py-3 text-sm font-semibold text-black transition hover:bg-white/90 active:scale-[0.98] disabled:opacity-50"
             >
                 <Phone className="w-4 h-4" />
-                {status === "sending" ? "Sending…" : "Schedule the call"}
+                {status === "sending" ? t("contact.form.callback.submitting") : t("contact.form.callback.submit")}
             </button>
         </form>
     );
 }
 
 function MessageForm() {
+    const { t } = useTranslation();
+    const subjects = t("contact.form.subjects", { returnObjects: true }) as string[];
+
     const [nom, setNom] = useState("");
     const [prenom, setPrenom] = useState("");
     const [email, setEmail] = useState("");
@@ -157,19 +148,19 @@ function MessageForm() {
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <Field label="Last Name" placeholder="Nom" value={nom} onChange={setNom} />
-                <Field label="First Name" placeholder="Prénom" value={prenom} onChange={setPrenom} />
+                <Field label={t("contact.form.message.nom")} placeholder={t("contact.form.message.nomPlaceholder")} value={nom} onChange={setNom} />
+                <Field label={t("contact.form.message.prenom")} placeholder={t("contact.form.message.prenomPlaceholder")} value={prenom} onChange={setPrenom} />
             </div>
-            <Field label="Email" placeholder="jean@exemple.com" type="email" value={email} onChange={setEmail} />
-            <SelectField label="Topic" options={subjects} value={sujet} onChange={setSujet} />
+            <Field label={t("contact.form.message.email")} placeholder={t("contact.form.message.emailPlaceholder")} type="email" value={email} onChange={setEmail} />
+            <SelectField label={t("contact.form.message.subject")} options={subjects} value={sujet} onChange={setSujet} />
 
             <div className="flex flex-col gap-1.5">
                 <label className="text-t6 font-medium uppercase tracking-widest text-white/50">
-                    Message
+                    {t("contact.form.message.message")}
                 </label>
                 <textarea
                     rows={4}
-                    placeholder="Tell us how we can help you…"
+                    placeholder={t("contact.form.message.messagePlaceholder")}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white placeholder:text-white/25 outline-none transition focus:border-white/30 focus:bg-white/8"
@@ -177,10 +168,10 @@ function MessageForm() {
             </div>
 
             {status === "sent" && (
-                <p className="text-sm text-green-400 text-center">Message sent successfully!</p>
+                <p className="text-sm text-green-400 text-center">{t("contact.form.message.success")}</p>
             )}
             {status === "error" && (
-                <p className="text-sm text-red-400 text-center">An error has occurred. Please try again.</p>
+                <p className="text-sm text-red-400 text-center">{t("contact.form.message.error")}</p>
             )}
 
             <button
@@ -189,7 +180,7 @@ function MessageForm() {
                 className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-white py-3 text-t5 font-semibold text-black transition hover:bg-white/90 active:scale-[0.98] disabled:opacity-50"
             >
                 <Mail className="w-4 h-4" />
-                {status === "sending" ? "Sending…" : "Send the message"}
+                {status === "sending" ? t("contact.form.message.submitting") : t("contact.form.message.submit")}
             </button>
         </form>
     );
@@ -224,6 +215,7 @@ function SelectField({label, options, value, onChange,}: {
     value: string;
     onChange: (v: string) => void;
 }) {
+    const { t } = useTranslation();
     return (
         <div className="flex flex-col gap-1.5">
             <label className="text-t6 font-medium uppercase tracking-widest text-white/50">
@@ -235,7 +227,7 @@ function SelectField({label, options, value, onChange,}: {
                 className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white outline-none transition focus:border-white/30 focus:bg-white/8"
             >
                 <option value="" disabled className="bg-[#111] text-white/50">
-                    Select…
+                    {t("contact.form.selectPlaceholder")}
                 </option>
                 {options.map((o) => (
                     <option key={o} value={o} className="bg-[#111] text-white">

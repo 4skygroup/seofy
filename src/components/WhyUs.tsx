@@ -1,6 +1,9 @@
 import { TrendingUp } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function WhyUs() {
+    const { t } = useTranslation();
+
     return (
         <section className="bg-black pb-10">
             <div className="border border-gray-700 rounded-2xl p-6 flex flex-col sm:flex-row items-center mx-auto gap-6 sm:gap-8 max-w-6xl text-center sm:text-left">
@@ -10,12 +13,12 @@ export default function WhyUs() {
                 </div>
                 <div>
                     <p className="text-t5 sm:text-t4 font-bold text-seofy-white mb-2">
-                        SEO isn't an option. It's an asset.
+                        {t("whyUs.title")}
                     </p>
                     <p className="text-t6 text-white leading-relaxed">
-                        Every well-ranked page can generate traffic, inquiries, and opportunities for months.
+                        {t("whyUs.paragraph1")}
                         <br />
-                        Seofy builds a sustainable SEO strategy to turn your website into a powerful tool for customer acquisition.
+                        {t("whyUs.paragraph2")}
                     </p>
                 </div>
             </div>

@@ -1,33 +1,36 @@
 import { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
-import {Globe, MapPin} from "lucide-react";
+import { Globe, MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import LangSwitcher from "./LangSwitcher.tsx";
 
 interface SubItem {
-    label: string;
+    labelKey: string;
     path: string;
 }
 
 interface NavItem {
-    label: string;
+    labelKey: string;
     path: string;
     external?: boolean;
     subItems?: SubItem[];
 }
 
 const navItems: NavItem[] = [
-    { label: "The Group", path: "https://www.playtosky.com/", external: true },
+    { labelKey: "nav.group", path: "https://www.playtosky.com/", external: true },
     {
-        label: "Offers",
+        labelKey: "nav.offers",
         path: "/offres",
         subItems: [
-            { label: "SEO / GEO", path: "/services/seo-geo" },
-            { label: "SEA / SMO", path: "/services/sea-smo" },
+            { labelKey: "nav.seoGeo", path: "/services/seo-geo" },
+            { labelKey: "nav.seaSmo", path: "/services/sea-smo" },
         ],
     },
-    { label: "Contact", path: "/contact" },
+    { labelKey: "nav.contact", path: "/contact" },
 ];
 
 export default function Navbar() {
+    const { t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     const [servicesOpen, setServicesOpen] = useState<boolean>(false);
     const [mobileServicesOpen, setMobileServicesOpen] = useState<boolean>(false);
@@ -46,13 +49,7 @@ export default function Navbar() {
 
             {/* Gauche (desktop uniquement) */}
             <div className="hidden md:flex items-center gap-10">
-                <NavLink
-                    to="/en"
-                    className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full font-glacial text-t6 hover:bg-white/90 transition"
-                >
-                    <Globe className="w-4 h-4" />
-                    English
-                </NavLink>
+                <LangSwitcher />
 
                 <NavLink
                     to="/location"
@@ -72,7 +69,7 @@ export default function Navbar() {
 
             {/* ── Desktop nav ── */}
             <ul className="hidden md:flex items-center gap-10">
-                {navItems.map(({ label, path, external, subItems }) => (
+                {navItems.map(({ labelKey, path, external, subItems }) => (
                     <li
                         key={path}
                         className="relative"
@@ -86,7 +83,7 @@ export default function Navbar() {
                                 rel="noopener noreferrer"
                                 className="font-glacial text-t5 text-white hover:text-seofy-green transition-colors duration-200"
                             >
-                                {label}
+                                {t(labelKey)}
                             </a>
                         ) : (
                             <NavLink
@@ -97,7 +94,7 @@ export default function Navbar() {
                                     }`
                                 }
                             >
-                                {label}
+                                {t(labelKey)}
                                 {subItems && (
                                     <svg
                                         className={`w-3 h-3 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
@@ -123,7 +120,7 @@ export default function Navbar() {
                                                 }`
                                             }
                                         >
-                                            {sub.label}
+                                            {t(sub.labelKey)}
                                         </NavLink>
                                     </li>
                                 ))}
@@ -137,7 +134,7 @@ export default function Navbar() {
             <button
                 className={`md:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8 z-50 relative ${menuOpen ? "invisible" : ""}`}
                 onClick={() => setMenuOpen((prev) => !prev)}
-                aria-label="Toggle menu"
+                aria-label={t("nav.toggleMenu")}
             >
                 <span className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${menuOpen ? "translate-y-2 rotate-45" : ""}`} />
                 <span className={`block h-0.5 w-6 bg-white transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""}`} />
@@ -155,7 +152,7 @@ export default function Navbar() {
                 <button
                     className="absolute top-5 right-8 text-white text-3xl font-light leading-none"
                     onClick={() => setMenuOpen(false)}
-                    aria-label="Fermer le menu"
+                    aria-label={t("nav.closeMenu")}
                 >
                     ✕
                 </button>
@@ -175,7 +172,7 @@ export default function Navbar() {
                         className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full font-glacial text-t6"
                     >
                         <Globe className="w-4 h-4" />
-                        English
+                        {t("nav.switchToEnglish")}
                     </NavLink>
 
                     <NavLink
@@ -189,7 +186,7 @@ export default function Navbar() {
 
                 {/* Items centrés */}
                 <ul className="flex flex-col items-center gap-8 flex-1">
-                    {navItems.map(({ label, path, external, subItems }) => (
+                    {navItems.map(({ labelKey, path, external, subItems }) => (
                         <li key={path} className="text-center">
                             {external ? (
                                 <a
@@ -199,7 +196,7 @@ export default function Navbar() {
                                     onClick={() => setMenuOpen(false)}
                                     className="font-glacial text-t3 text-white"
                                 >
-                                    {label}
+                                    {t(labelKey)}
                                 </a>
                             ) : subItems ? (
                                 <div>
@@ -207,7 +204,7 @@ export default function Navbar() {
                                         onClick={() => setMobileServicesOpen((prev) => !prev)}
                                         className="font-glacial text-t3 text-white flex items-center gap-2 mx-auto"
                                     >
-                                        {label}
+                                        {t(labelKey)}
                                         <svg
                                             className={`w-4 h-4 transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
                                             fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
@@ -224,7 +221,7 @@ export default function Navbar() {
                                                     onClick={() => { setMenuOpen(false); setMobileServicesOpen(false); }}
                                                     className="font-glacial text-t3 text-white/80 hover:text-white transition-colors duration-200"
                                                 >
-                                                    {sub.label}
+                                                    {t(sub.labelKey)}
                                                 </NavLink>
                                             </li>
                                         ))}
@@ -236,7 +233,7 @@ export default function Navbar() {
                                     onClick={() => setMenuOpen(false)}
                                     className="font-glacial text-t3 text-white"
                                 >
-                                    {label}
+                                    {t(labelKey)}
                                 </NavLink>
                             )}
                         </li>
@@ -245,7 +242,7 @@ export default function Navbar() {
 
                 {/* Mention en bas */}
                 <p className="text-center text-white/50 text-t5 pb-8 font-glacial">
-                    A Play To Sky Group Entity
+                    {t("nav.footer")}
                 </p>
             </div>
         </nav>

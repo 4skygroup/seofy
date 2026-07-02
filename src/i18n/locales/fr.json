@@ -1,0 +1,219 @@
+{
+  "nav": {
+    "group": "Le Groupe",
+    "offers": "Offres",
+    "seoGeo": "SEO / GEO",
+    "seaSmo": "SEA / SMO",
+    "contact": "Contact",
+    "switchToEnglish": "English",
+    "footer": "Une entité Play To Sky Group",
+    "toggleMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+
+  "hero": {
+    "title": "Search Engines (SEO) Agency of AI and Media Buying SEA, Social Ads and Programmatic",
+    "cta": "Découvrir nos offres"
+  },
+
+  "about": {
+    "title": "À propos",
+    "paragraph1": "Il y aura un avant et un après Seofy. Nous ne recourons ni aux artifices ni aux rapports techniques interminables. Nous sommes une agence SEO nouvelle génération construite autour d'une seule obsession : le ROI. Notre équipe d'experts ne se contente pas d'améliorer votre visibilité. Nous mettons en œuvre des stratégies sur mesure, exécutées avec précision.",
+    "paragraph2": "Ici, nous ne passons pas des mois à analyser — nous livrons des résultats. Que vous soyez une startup en croissance ou une entreprise cherchant à renforcer sa position, notre promesse reste la même : une hausse du trafic qualifié."
+  },
+
+  "whyUs": {
+    "title": "Le SEO n'est pas une option. C'est un actif.",
+    "paragraph1": "Chaque page bien classée peut générer du trafic, des demandes et des opportunités pendant des mois.",
+    "paragraph2": "Seofy construit une stratégie SEO durable pour transformer votre site en un puissant outil d'acquisition de clients."
+  },
+
+  "services": {
+    "heading": "CE QUE NOUS FAISONS",
+    "seoGeo": {
+      "title": "SEO & GEO",
+      "subtitle": "Boostez votre visibilité organique, dominez les résultats de recherche et attirez un trafic qualifié."
+    },
+    "seaSmo": {
+      "title": "SEA & SMO",
+      "subtitle": "Des campagnes publicitaires et sur les réseaux sociaux efficaces pour générer plus de trafic, d'engagement et de conversions."
+    }
+  },
+
+  "stats": {
+    "traffic": "Trafic organique moyen",
+    "keywords": "Mots-clés en première page",
+    "conversions": "Conversions organiques",
+    "testimonial": "Grâce à Seofy, notre site est passé de l'anonymat à la première page de Google. Les demandes ont explosé.",
+    "testimonialAuthor": "Client Seofy"
+  },
+
+  "faq": {
+    "heading": "FAQ",
+    "items": {
+      "1": {
+        "question": "Combien de temps faut-il pour voir des résultats en SEO ?",
+        "answer": "Le SEO est une stratégie à moyen et long terme. En général, les premiers résultats commencent à apparaître entre 3 et 6 mois, selon la concurrence, l'état actuel de votre site et les actions mises en place. Des gains plus significatifs, en trafic, positionnement et conversions, se consolident généralement entre 6 et 12 mois. Le SEO est un investissement durable qui continue de porter ses fruits dans le temps."
+      },
+      "2": {
+        "question": "Quel budget faut-il prévoir pour le SEO ?",
+        "answer": "Le budget dépend de plusieurs facteurs : la taille de votre site, le niveau de concurrence sur votre marché, vos objectifs et le niveau d'accompagnement souhaité. Chaque projet étant unique, une analyse personnalisée est indispensable pour proposer une stratégie adaptée à votre situation."
+      },
+      "3": {
+        "question": "Quelle est la différence entre SEO et SEA ?",
+        "answer": "Le SEO (référencement naturel) consiste à optimiser votre site pour apparaître dans les résultats naturels de Google, c'est une stratégie durable qui génère du trafic sur le long terme. Le SEA (référencement payant) repose sur des publicités comme Google Ads, offrant des résultats immédiats qui s'arrêtent dès que vous coupez votre budget. Le SEO est un investissement long terme, le SEA délivre des résultats rapides mais temporaires. Les deux sont complémentaires et fonctionnent mieux ensemble pour maximiser votre visibilité."
+      },
+      "4": {
+        "question": "Travaillez-vous avec toutes les plateformes ?",
+        "answer": "Oui, nous travaillons avec la majorité des plateformes : WordPress, Shopify, Webflow, ainsi que les sites sur mesure. Notre approche s'adapte à votre environnement technique pour garantir des optimisations efficaces, quel que soit votre CMS."
+      },
+      "5": {
+        "question": "Faut-il un blog pour le SEO ?",
+        "answer": "Un blog n'est pas obligatoire, mais fortement recommandé. Il permet de cibler davantage de mots-clés, d'attirer un trafic qualifié et de renforcer votre autorité auprès de Google. C'est un excellent levier pour développer votre visibilité, notamment sur les requêtes informationnelles."
+      },
+      "6": {
+        "question": "Comment se déroule un accompagnement SEO ?",
+        "answer": "Un accompagnement SEO se déroule en plusieurs étapes : un audit complet couvrant les aspects techniques, éditoriaux et concurrentiels ; la définition d'une stratégie SEO adaptée à vos objectifs ; des optimisations techniques et sémantiques ; la création et l'optimisation de contenu ; le netlinking pour renforcer l'autorité de votre site ; et enfin un suivi mensuel avec des ajustements et un reporting clair. L'objectif est d'améliorer durablement votre visibilité, votre trafic et vos conversions."
+      }
+    }
+  },
+
+  "cta" : {
+    "title" : "Prêt à améliorer votre visibilité sur Google ?",
+    "desc" : "Bénéficiez d'un audit SEO gratuit et découvrez les opportunités de croissance pour votre site web.",
+    "btn" : "Obtenir mon audit SEO"
+  },
+
+  "seaSmo": {
+    "hero": {
+      "titre": "SEA & SMO",
+      "desc": "La performance publicitaire, ce n'est pas juste diffuser des annonces ; c'est une stratégie bien définie conçue pour attirer les bonnes audiences et maximiser chaque conversion."
+    },
+    "section1": {
+      "title": "Un SEA stratégique pour booster votre croissance",
+      "subtitle": "Arrêtez de vous concentrer sur les visites, concentrez-vous sur le chiffre d'affaires",
+      "description": "Le SEA traditionnel peut vite coûter cher. Notre approche combine acquisition payante et optimisation continue :",
+      "hashtag1": "Ciblage précis : diffusion des annonces auprès des audiences les plus qualifiées",
+      "hashtag2": "Data-Driven : analyse de performance, optimisation des campagnes, ajustements continus basés sur la donnée",
+      "cta": "Lancez votre stratégie",
+      "imageAlt": "Courbe de croissance SEO"
+    },
+    "section2": {
+      "title": "Une compréhension approfondie des algorithmes",
+      "subtitle": "Les plateformes publicitaires évoluent sans cesse — nous aussi",
+      "description": "Nos campagnes sont entièrement optimisées et validées :",
+      "hashtag1": "Audit de campagne (ciblage, budget, annonces, audiences)",
+      "hashtag2": "Optimisation des KPIs (CTR, CPC, conversions, ROI)",
+      "cta": "Maîtrisez vos algorithmes",
+      "imageAlt": "Une stratégie SEA"
+    },
+    "sectionMots": {
+      "description": "Le SEA stratégique est une approche spécifique pour maximiser",
+      "kw1": "CAMPAGNES CIBLÉES",
+      "kw2": "AUDIENCES CIBLES",
+      "kw3": "INTENTION D'ACHAT",
+      "kw4": "VISIBILITÉ IMMÉDIATE",
+      "kw5": "CONVERSIONS"
+    },
+    "section3": {
+      "title": "Une stratégie SEA adaptée à l'identité unique de votre entreprise",
+      "subtitle": "Arrêtez de vous concentrer sur les visites, concentrez-vous sur le chiffre d'affaires",
+      "description": "Le SEA traditionnel a ses limites sans optimisation. Notre approche combine acquisition rapide et performance durable :",
+      "hashtag1": "Analyse de marché et intention de recherche",
+      "hashtag2": "Optimisation des budgets et des campagnes publicitaires",
+      "hashtag3": "Prise en compte des objectifs business et du retour sur investissement",
+      "cta": "Lancez votre stratégie"
+    }
+  },
+
+  "seoGeo": {
+    "hero": {
+      "titre": "SEO & GEO",
+      "desc": "La visibilité ne dépend pas d'une série d'actions isolées, mais d'une stratégie claire, construite dans le bon ordre et exécutée avec précision.",
+      "autresdesc": "Oubliez tout ce que vous savez sur le SEO"
+    },
+    "section1": {
+      "title": "Un SEO sémantique pour booster votre croissance",
+      "subtitle": "Arrêtez de vous concentrer sur les visites, concentrez-vous sur le chiffre d'affaires",
+      "description": "Le SEO traditionnel est lent... Notre approche combine SEO et growth hacking :",
+      "hashtag1": "Agilité et itération : identifier les quick wins pour des résultats rapides",
+      "hashtag2": "Data-Driven : tests, mesures, ajustements en temps réel — chaque décision s'appuie sur la donnée",
+      "cta": "Lancez votre stratégie",
+      "imageAlt": "Courbe de croissance SEO"
+    },
+    "section2": {
+      "title": "Une compréhension approfondie des algorithmes",
+      "subtitle": "Google évolue sans cesse, nous aussi",
+      "description": "Nos méthodes sont 100% testées et validées",
+      "hashtag1": "Audits techniques (crawlabilité, performance, architecture)",
+      "hashtag2": "Optimisation de l'E-E-A-T (Expérience, Expertise, Autorité, Fiabilité)",
+      "cta": "Maîtrisez vos algorithmes",
+      "imageAlt": "Une stratégie SEA"
+    },
+    "sectionMots": {
+      "description": "Le SEO sémantique est une approche spécifique pour optimiser",
+      "kw1": "MOTS-CLÉS",
+      "kw2": "CHAMPS LEXICAUX",
+      "kw3": "RELATIONS ENTRE LES CONCEPTS",
+      "kw4": "CONTEXTE GLOBAL",
+      "kw5": "QUESTION DE RECHERCHE"
+    },
+    "section3": {
+      "title": "Une stratégie adaptée à votre identité unique",
+      "subtitle": "Arrêtez de vous concentrer sur les visites, concentrez-vous sur le chiffre d'affaires",
+      "description": "Le SEO traditionnel est lent... Notre approche combine SEO et growth hacking :",
+      "hashtag1": "Analyse de marché",
+      "hashtag2": "Analyse des faiblesses de vos concurrents",
+      "hashtag3": "Prise en compte des ressources internes",
+      "cta": "Lancez votre stratégie",
+      "imageAlt": "Une stratégie SEA"
+    }
+  },
+
+  "contact": {
+    "title": "Construisons votre croissance ensemble",
+    "subtitle": "Nos experts vous accompagnent dans la définition d'une stratégie digitale alignée sur vos objectifs. Contactez-nous selon le mode d'échange qui vous convient le mieux.",
+    "info": {
+      "email": { "label": "Email", "value": "contact@seofyagency.com" },
+      "phone": { "label": "Téléphone", "value": "01 30 29 30 25" },
+      "hours": { "label": "Horaires", "value": "Lun–Ven · 9h30–19h00" }
+    },
+    "tagline": "9 expertises complémentaires, un seul objectif : faire grandir votre entreprise.",
+    "form": {
+      "tabs": { "callback": "Se faire rappeler", "message": "Envoyer un message" },
+      "subjects": ["SEO & Référencement", "Social Ads", "Content Marketing", "Analytics", "Autre"],
+      "timeSlots": ["9h30 – 10h30", "10h30 – 11h30", "11h30 – 12h30", "14h00 – 15h00", "15h00 – 16h00", "16h00 – 17h00", "17h00 – 18h00"],
+      "selectPlaceholder": "Sélectionner…",
+      "callback": {
+        "nom": "Nom",
+        "nomPlaceholder": "Dupont",
+        "prenom": "Prénom",
+        "prenomPlaceholder": "Jean",
+        "phone": "Numéro de téléphone",
+        "phonePlaceholder": "+33 6 12 34 56 78",
+        "subject": "Sujet",
+        "time": "Horaire de l'appel",
+        "date": "Jour de l'appel",
+        "submit": "Programmer l'appel",
+        "submitting": "Envoi…",
+        "success": "Demande envoyée avec succès !",
+        "error": "Une erreur est survenue. Réessaie."
+      },
+      "message": {
+        "nom": "Nom",
+        "nomPlaceholder": "Nom",
+        "prenom": "Prénom",
+        "prenomPlaceholder": "Prénom",
+        "email": "Email",
+        "emailPlaceholder": "jean@exemple.com",
+        "subject": "Sujet",
+        "message": "Message",
+        "messagePlaceholder": "Dites-nous en quoi nous pouvons vous aider…",
+        "submit": "Envoyer le message",
+        "submitting": "Envoi…",
+        "success": "Message envoyé avec succès !",
+        "error": "Une erreur est survenue. Réessaie."
+      }
+    }
+  }
+}

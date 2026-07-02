@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 export default function About() {
+    const { t } = useTranslation();
+
     return (
         <section className="relative flex items-center justify-center w-full bg-black overflow-hidden min-h-screen py-[clamp(40px,6vh,80px)] px-4">
             <div className="animate-orb-bounce relative flex items-center justify-center">
@@ -8,7 +12,7 @@ export default function About() {
 
                         <div className="relative z-10 flex flex-col items-center justify-center w-full h-full px-[12%] text-center">
                             <h2 className="font-glacial font-bold uppercase tracking-[0.2em] text-white mb-3 text-base md:text-h7">
-                                About Us
+                                {t("about.title")}
                             </h2>
 
                             <p
@@ -18,11 +22,9 @@ export default function About() {
                                     textShadow: "0 1px 4px rgba(0, 0, 0, 0.7)"
                                 }}
                             >
-                                There will be a before and after Seofy. We don’t resort to gimmicks or endless technical reports. We’re a next-generation SEO agency built around a single obsession: ROI.
-                                Our team of experts doesn’t just improve your visibility. We implement tailored strategies, executed with precision.
+                                {t("about.paragraph1")}
                                 <br/>
-                                Here, we don’t spend months analyzing—we deliver results.
-                                Whether you’re a growing startup or a company looking to strengthen its position, our promise remains the same: a surge in qualified traffic.
+                                {t("about.paragraph2")}
                             </p>
                         </div>
                     </div>

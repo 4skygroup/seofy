@@ -1,0 +1,219 @@
+{
+  "nav": {
+    "group": "The Group",
+    "offers": "Offers",
+    "seoGeo": "SEO / GEO",
+    "seaSmo": "SEA / SMO",
+    "contact": "Contact",
+    "switchToEnglish": "English",
+    "footer": "A Play To Sky Group Entity",
+    "toggleMenu": "Toggle menu",
+    "closeMenu": "Close menu"
+  },
+
+  "hero": {
+    "title": "Search Engines (SEO) Agency of AI and Media Buying SEA, Social Ads and Programmatic",
+    "cta": "Discover our offers"
+  },
+
+  "about": {
+    "title": "About Us",
+    "paragraph1": "There will be a before and after Seofy. We don't resort to gimmicks or endless technical reports. We're a next-generation SEO agency built around a single obsession: ROI. Our team of experts doesn't just improve your visibility. We implement tailored strategies, executed with precision.",
+    "paragraph2": "Here, we don't spend months analyzing—we deliver results. Whether you're a growing startup or a company looking to strengthen its position, our promise remains the same: a surge in qualified traffic."
+  },
+
+  "whyUs": {
+    "title": "SEO isn't an option. It's an asset.",
+    "paragraph1": "Every well-ranked page can generate traffic, inquiries, and opportunities for months.",
+    "paragraph2": "Seofy builds a sustainable SEO strategy to turn your website into a powerful tool for customer acquisition."
+  },
+
+  "services": {
+    "heading": "WHAT WE DO",
+    "seoGeo": {
+      "title": "SEO & GEO",
+      "subtitle": "Boost your organic visibility, dominate search results, and attract qualified traffic."
+    },
+    "seaSmo": {
+      "title": "SEA & SMO",
+      "subtitle": "Effective advertising and social media campaigns to drive more traffic, engagement, and conversions."
+    }
+  },
+
+  "stats": {
+    "traffic": "Average organic traffic",
+    "keywords": "Keywords on the first page",
+    "conversions": "Organic conversions",
+    "testimonial": "Thanks to Seofy, our website has gone from obscurity to the first page of Google. Inquiries have skyrocketed.",
+    "testimonialAuthor": "Seofy Customer"
+  },
+
+  "faq": {
+    "heading": "FAQ",
+    "items": {
+      "1": {
+        "question": "How long does it take to see SEO results?",
+        "answer": "SEO is a medium to long-term strategy. In general, the first results start to appear between 3 and 6 months, depending on the competition, the current state of your site, and the actions implemented. More significant gains, in traffic, rankings, and conversions, typically consolidate between 6 and 12 months. SEO is a lasting investment that continues to deliver results over time."
+      },
+      "2": {
+        "question": "What budget should I plan for SEO?",
+        "answer": "The budget depends on several factors: the size of your site, the level of competition in your market, your objectives, and the level of support you need. Since every project is unique, a personalised analysis is essential to propose a strategy tailored to your situation."
+      },
+      "3": {
+        "question": "What is the difference between SEO and SEA?",
+        "answer": "SEO (organic search) involves optimising your site to appear in Google's natural results, it's a sustainable strategy that generates traffic over the long term. SEA (paid search) relies on advertising such as Google Ads, delivering immediate results that stop as soon as you pause your budget. SEO is a long-term investment, SEA delivers quick but temporary results. Both are complementary and work best together to maximise your visibility."
+      },
+      "4": {
+        "question": "Do you work with all platforms?",
+        "answer": "Yes, we work with the majority of platforms: WordPress, Shopify, Webflow, as well as custom-built sites. Our approach adapts to your technical environment to ensure effective optimisations, regardless of your CMS."
+      },
+      "5": {
+        "question": "Do you need a blog for SEO?",
+        "answer": "A blog is not mandatory, but it is strongly recommended. It allows you to target more keywords, attract qualified traffic, and strengthen your authority on Google. It is an excellent lever for growing your visibility, especially for informational queries."
+      },
+      "6": {
+        "question": "How does an SEO engagement work?",
+        "answer": "An SEO engagement unfolds in several steps: a full audit covering technical, content, and competitive aspects; definition of an SEO strategy tailored to your objectives; technical and semantic optimisations; content creation and optimisation; netlinking to build your site's authority; and finally, monthly monitoring and adjustments with clear reporting. The goal is to durably improve your visibility, traffic, and conversions."
+      }
+    }
+  },
+
+  "cta" : {
+    "title" : "Ready to boost your visibility on Google?",
+    "desc" : "Get a free SEO audit and discover growth opportunities for your website.",
+    "btn" : "Get my SEO audit"
+  },
+
+  "seaSmo": {
+    "hero": {
+      "titre": "SEA & SMO",
+      "desc": "Advertising performance isn't just about running ads; it's about a well-defined strategy designed to attract the right audiences and maximize every conversion."
+    },
+    "section1": {
+      "title": "Strategic SEA to Drive Your Growth",
+      "subtitle": "Stop focusing on visits—focus on revenue",
+      "description": "Traditional SEA can get expensive. Our approach combines paid acquisition with ongoing optimization:",
+      "hashtag1": "Precise targeting: delivering ads to the most qualified audiences",
+      "hashtag2": "Data-Driven: performance analysis, campaign optimization, and continuous adjustments based on data",
+      "cta": "Get started with your strategy",
+      "imageAlt": "SEO growth chart"
+    },
+    "section2": {
+      "title": "A thorough understanding of algorithms",
+      "subtitle": "Advertising platforms are constantly evolving—and so are we",
+      "description": "Our campaigns are fully optimized and validated:",
+      "hashtag1": "Campaign audit (targeting, budget, ads, audiences)",
+      "hashtag2": "Optimization of KPIs (CTR, CPC, conversions, ROI)",
+      "cta": "Master your algorithms",
+      "imageAlt": "An SEA strategy"
+    },
+    "sectionMots": {
+      "description": "Strategic SEA is a specific approach to maximizing",
+      "kw1": "TARGETED CAMPAIGNS",
+      "kw2": "TARGET AUDIENCES",
+      "kw3": "PURCHASE INTENTION",
+      "kw4": "IMMEDIATE VISIBILITY",
+      "kw5": "CONVERSIONS"
+    },
+    "section3": {
+      "title": "An SEA strategy tailored to your company's unique identity",
+      "subtitle": "Stop focusing on visits—focus on revenue",
+      "description": "Traditional SEA has its limitations without optimization. Our approach combines rapid acquisition with sustainable performance:",
+      "hashtag1": "Market Analysis and Search Intent",
+      "hashtag2": "Optimizing Budgets and Advertising Campaigns",
+      "hashtag3": "Taking business objectives and return on investment into account",
+      "cta": "Get started with your strategy"
+    }
+  },
+
+  "seoGeo": {
+    "hero": {
+      "titre": "SEO & GEO",
+      "desc": "Visibility does not depend on a series of isolated actions, but on a clear strategy, developed in the right order and executed with precision.",
+      "autresdesc": "Forget everything you know about SEO"
+    },
+    "section1": {
+      "title": "Semantic SEO to Drive Your Growth",
+      "subtitle": "Stop focusing on visits—focus on revenue",
+      "description": "Traditional SEO is slow... Our approach combines SEO with growth hacking:",
+      "hashtag1": "Agility and Iteration: Identifying Quick Wins to Deliver Rapid Results",
+      "hashtag2": "Data-Driven: testing, measurement, real-time adjustments—every decision is backed by data",
+      "cta": "Get started with your strategy",
+      "imageAlt": "SEO growth chart"
+    },
+    "section2": {
+      "title": "A thorough understanding of algorithms",
+      "subtitle": "Google is constantly evolving, and so are we",
+      "description": "Our methods are 100% tested and validated",
+      "hashtag1": "Technical audits (crawlability, performance, architecture)",
+      "hashtag2": "Optimizing E-E-A-T (Experience, Expertise, Authority, Trustworthiness)",
+      "cta": "Master your algorithms",
+      "imageAlt": "An SEA strategy"
+    },
+    "sectionMots": {
+      "description": "Semantic SEO is a specific approach to optimizing",
+      "kw1": "KEYWORDS",
+      "kw2": "LEXICAL FIELDS",
+      "kw3": "RELATIONSHIP BETWEEN CONCEPTS",
+      "kw4": "OVERALL CONTEXT",
+      "kw5": "RESEARCH QUESTION"
+    },
+    "section3": {
+      "title": "A strategy tailored to your unique identity",
+      "subtitle": "Stop focusing on visits—focus on revenue",
+      "description": "Traditional SEO is slow... Our approach combines SEO with growth hacking:",
+      "hashtag1": "Market Analysis",
+      "hashtag2": "Analyzing Your Competitors' Weaknesses",
+      "hashtag3": "Consideration of internal resources",
+      "cta": "Get started with your strategy",
+      "imageAlt": "An SEA strategy"
+    }
+  },
+
+  "contact": {
+    "title": "Let's build your growth together",
+    "subtitle": "Our experts help you define a digital strategy aligned with your goals. Contact us using whichever channel suits you best.",
+    "info": {
+      "email": { "label": "Email", "value": "contact@seofyagency.com" },
+      "phone": { "label": "Phone", "value": "01 30 29 30 25" },
+      "hours": { "label": "Hours", "value": "Mon–Fri · 9:30am–7:00pm" }
+    },
+    "tagline": "9 complementary areas of expertise, one goal: growing your business.",
+    "form": {
+      "tabs": { "callback": "Request a callback", "message": "Send a message" },
+      "subjects": ["SEO", "Social Ads", "Content Marketing", "Analytics", "Other"],
+      "timeSlots": ["9:30 – 10:30", "10:30 – 11:30", "11:30 – 12:30", "2:00 – 3:00", "3:00 – 4:00", "4:00 – 5:00", "5:00 – 6:00"],
+      "selectPlaceholder": "Select…",
+      "callback": {
+        "nom": "Last name",
+        "nomPlaceholder": "Smith",
+        "prenom": "First name",
+        "prenomPlaceholder": "John",
+        "phone": "Phone number",
+        "phonePlaceholder": "+1 555 123 4567",
+        "subject": "Subject",
+        "time": "Call time slot",
+        "date": "Call date",
+        "submit": "Schedule the call",
+        "submitting": "Sending…",
+        "success": "Request sent successfully!",
+        "error": "Something went wrong. Please try again."
+      },
+      "message": {
+        "nom": "Last name",
+        "nomPlaceholder": "Last name",
+        "prenom": "First name",
+        "prenomPlaceholder": "First name",
+        "email": "Email",
+        "emailPlaceholder": "john@example.com",
+        "subject": "Subject",
+        "message": "Message",
+        "messagePlaceholder": "Tell us how we can help…",
+        "submit": "Send message",
+        "submitting": "Sending…",
+        "success": "Message sent successfully!",
+        "error": "Something went wrong. Please try again."
+      }
+    }
+  }
+}

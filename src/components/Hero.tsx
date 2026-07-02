@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
 
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
     return (
         <section
@@ -23,16 +25,14 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center gap-8 px-6 text-center">
                 <h1 className="font-glacial font-normal leading-snug tracking-tight text-white max-w-4xl text-h6 md:text-h4">
-                    Search Engines (SEO) Agency
-                    of AI and Media Buying SEA,
-                    Social Ads and Programmatic
+                    {t("hero.title")}
                 </h1>
 
                 <button
                     onClick={() => navigate("/contact")}
                     className="group flex items-center gap-2 rounded-full border border-white/30 px-6 py-2.5 text-t5 font-glacial text-white/90 tracking-wide transition-all duration-300 hover:bg-white/10 hover:border-white/50"
                 >
-                    Discover our offers
+                    {t("hero.cta")}
                     <span className="transition-transform duration-300 group-hover:translate-x-1">&gt;</span>
                 </button>
             </div>

@@ -1,10 +1,11 @@
+import { useTranslation } from "react-i18next";
 import HeroComp from "../components/HeroComp.tsx";
 import Section from "../components/Section.tsx";
 import SectionMots from "../components/SectionMots.tsx";
 import { useMetaTags } from "../hooks/useMetaTags.ts";
 
-
 function SeaSmo() {
+    const { t } = useTranslation();
     useMetaTags({
         title: "SEA & SMO - Acquisition payante et Social Media | Seofy",
         description: "Services de SEA (Search Engine Advertising) et SMO (Social Media Optimization). Campagnes publicitaires ciblées pour maximiser vos conversions.",
@@ -15,7 +16,7 @@ function SeaSmo() {
         twitterTitle: "SEA & SMO - Acquisition payante et Social Media",
         twitterDescription: "Stratégie SEA et SMO pour votre croissance",
         structuredData: {
-            "@context": "https://schema.org",
+            "@context": "https://schema.org/",
             "@type": "BreadcrumbList",
             itemListElement: [
                 {
@@ -43,62 +44,62 @@ function SeaSmo() {
     return (
         <div className="bg-seofy-green">
             <HeroComp
-                titre="SEA & SMO"
-                desc="Advertising performance isn't just about running ads; it's about a well-defined strategy designed to attract the right audiences and maximize every conversion."
+                titre={t("seaSmo.hero.titre")}
+                desc={t("seaSmo.hero.desc")}
                 img="/seasmo/sea1.webp"
             />
 
             <Section
-                title="Strategic SEA to Drive Your Growth"
-                subtitle="Stop focusing on visits—focus on revenue"
-                description="Traditional SEA can get expensive. Our approach combines paid acquisition with ongoing optimization:"
+                title={t("seaSmo.section1.title")}
+                subtitle={t("seaSmo.section1.subtitle")}
+                description={t("seaSmo.section1.description")}
                 hashtags={[
-                    "Precise targeting: delivering ads to the most qualified audiences",
-                    "Data-Driven: performance analysis, campaign optimization, and continuous adjustments based on data",
+                    t("seaSmo.section1.hashtag1"),
+                    t("seaSmo.section1.hashtag2"),
                 ]}
-                ctaLabel="Get started with your strategy"
+                ctaLabel={t("seaSmo.section1.cta")}
                 imageSrc="/seasmo/sea2.webp"
-                imageAlt="SEO growth chart"
+                imageAlt={t("seaSmo.section1.imageAlt")}
             />
 
             <Section
-                title="A thorough understanding of algorithms"
-                subtitle="Advertising platforms are constantly evolving—and so are we"
-                description="Our campaigns are fully optimized and validated:"
+                title={t("seaSmo.section2.title")}
+                subtitle={t("seaSmo.section2.subtitle")}
+                description={t("seaSmo.section2.description")}
                 hashtags={[
-                    "Campaign audit (targeting, budget, ads, audiences)",
-                    "Optimization of KPIs (CTR, CPC, conversions, ROI)",
+                    t("seaSmo.section2.hashtag1"),
+                    t("seaSmo.section2.hashtag2"),
                 ]}
-                ctaLabel="Master your algorithms"
+                ctaLabel={t("seaSmo.section2.cta")}
                 imageSrc="/seasmo/sea3.webp"
-                imageAlt="An SEA strategy"
+                imageAlt={t("seaSmo.section2.imageAlt")}
                 imagePosition="left"
             />
 
             <SectionMots
-                description="Strategic SEA is a specific approach to maximizing"
+                description={t("seaSmo.sectionMots.description")}
                 keywords={[
-                    { label: "TARGETED CAMPAIGNS",      rotate: -20, offsetY: 20, offsetX: "2%" },
-                    { label: "TARGET AUDIENCES",   rotate: 0,  offsetY: 5,  offsetX: "14%" },
-                    { label: "PURCHASE INTENTION",      rotate: -15, offsetY: 28, offsetX: "30%" },
-                    { label: "IMMEDIATE VISIBILITY",   rotate: 0,   offsetY: 0, offsetX: "52%" },
-                    { label: "CONVERSIONS",            rotate: 0, offsetY: 0,  offsetX: "72%" },
+                    { label: t("seaSmo.sectionMots.kw1"), rotate: -20, offsetY: 20, offsetX: "2%" },
+                    { label: t("seaSmo.sectionMots.kw2"), rotate: 0,  offsetY: 5,  offsetX: "14%" },
+                    { label: t("seaSmo.sectionMots.kw3"), rotate: -15, offsetY: 28, offsetX: "30%" },
+                    { label: t("seaSmo.sectionMots.kw4"), rotate: 0,   offsetY: 0, offsetX: "52%" },
+                    { label: t("seaSmo.sectionMots.kw5"), rotate: 0, offsetY: 0,  offsetX: "72%" },
                 ]}
                 keywordColor="#164D55"
             />
 
             <Section
-                title="An SEA strategy tailored to your company’s unique identity"
-                subtitle="Stop focusing on visits—focus on revenue"
-                description="Traditional SEA has its limitations without optimization. Our approach combines rapid acquisition with sustainable performance:"
+                title={t("seaSmo.section3.title")}
+                subtitle={t("seaSmo.section3.subtitle")}
+                description={t("seaSmo.section3.description")}
                 hashtags={[
-                    "Market Analysis and Search Intent",
-                    "Optimizing Budgets and Advertising Campaigns",
-                    "Taking business objectives and return on investment into account",
+                    t("seaSmo.section3.hashtag1"),
+                    t("seaSmo.section3.hashtag2"),
+                    t("seaSmo.section3.hashtag3"),
                 ]}
-                ctaLabel="Get started with your strategy"
+                ctaLabel={t("seaSmo.section3.cta")}
                 imageSrc="/seasmo/sea4.webp"
-                imageAlt="An SEA strategy"
+                imageAlt={t("seaSmo.section2.imageAlt")}
             />
 
         </div>

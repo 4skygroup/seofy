@@ -1,24 +1,27 @@
 import { Mail, Phone, Clock } from "lucide-react";
-
-const cards = [
-    {
-        icon: <Mail className="w-5 h-5 text-white" />,
-        label: "Email",
-        value: "contact@seofyagency.com",
-    },
-    {
-        icon: <Phone className="w-5 h-5 text-white" />,
-        label: "Phone",
-        value: "01 30 29 30 25",
-    },
-    {
-        icon: <Clock className="w-5 h-5 text-white" />,
-        label: "Hours",
-        value: "Lun–Ven · 9h30–19h00",
-    },
-];
+import { useTranslation } from "react-i18next";
 
 export default function ContactInfoCards() {
+    const { t } = useTranslation();
+
+    const cards = [
+        {
+            icon: <Mail className="w-5 h-5 text-white" />,
+            label: t("contact.info.email.label"),
+            value: t("contact.info.email.value"),
+        },
+        {
+            icon: <Phone className="w-5 h-5 text-white" />,
+            label: t("contact.info.phone.label"),
+            value: t("contact.info.phone.value"),
+        },
+        {
+            icon: <Clock className="w-5 h-5 text-white" />,
+            label: t("contact.info.hours.label"),
+            value: t("contact.info.hours.value"),
+        },
+    ];
+
     return (
         <div className="flex flex-col gap-4">
             {cards.map((card) => (
@@ -42,11 +45,11 @@ export default function ContactInfoCards() {
                 <img
                     src="/logoSeofy.webp"
                     alt=""
-                    className="h-8 w-auto object-contain"
+                    className="h-6 w-auto object-contain"
                     style={{ filter: "brightness(0) invert(1)" }}
                 />
                 <p className="text-t6 md:text-t5 leading-relaxed text-white/40">
-                    9 complementary areas of expertise, all with a single goal: to help your business grow.
+                    {t("contact.tagline")}
                 </p>
             </div>
         </div>

@@ -1,28 +1,31 @@
+import { useTranslation } from "react-i18next";
 import ServiceCard, { type ServiceCardProps } from "./ServiceCard";
 
-const SERVICES: ServiceCardProps[] = [
-    {
-        title: "SEO & GEO",
-        subtitle: "Boost your organic visibility, dominate search results, and attract qualified traffic.",
-        imageSrc: "/seo.webp",
-        imageAlt: "SEO & GEO illustration",
-        href: "/services/seo-geo",
-    },
-    {
-        title: "SEA & SMO",
-        subtitle: "Effective advertising and social media campaigns to drive more traffic, engagement, and conversions.",
-        imageSrc: "/sea.webp",
-        imageAlt: "SEA & SMO illustration",
-        href: "/services/sea-smo",
-    },
-];
-
 export default function ServiceList() {
+    const { t } = useTranslation();
+
+    const SERVICES: ServiceCardProps[] = [
+        {
+            title: t("services.seoGeo.title"),
+            subtitle: t("services.seoGeo.subtitle"),
+            imageSrc: "/seo.webp",
+            imageAlt: "SEO & GEO illustration",
+            href: "/services/seo-geo",
+        },
+        {
+            title: t("services.seaSmo.title"),
+            subtitle: t("services.seaSmo.subtitle"),
+            imageSrc: "/sea.webp",
+            imageAlt: "SEA & SMO illustration",
+            href: "/services/sea-smo",
+        },
+    ];
+
     return (
         <section className="flex flex-col items-center gap-10 px-6 py-20 bg-seofy-darkgreen min-h-screen">
             <div className="flex flex-col items-center gap-2">
                 <h2 className="font-glacial text-h6 md:text-h5 text-white text-center m-0">
-                    WHAT WE DO
+                    {t("services.heading")}
                 </h2>
                 <div className="w-8 h-0.5 bg-seofy-green" />
             </div>

@@ -1,105 +1,71 @@
+import { useTranslation } from "react-i18next";
 import HeroComp from "../components/HeroComp.tsx";
 import Section from "../components/Section.tsx";
 import SectionMots from "../components/SectionMots.tsx";
-import { useMetaTags } from "../hooks/useMetaTags.ts";
-
 
 function SeoGeo() {
-    useMetaTags({
-        title: "SEO & GEO - Optimisation de visibilité locale | Seofy",
-        description: "Services de SEO Géographique pour améliorer votre visibilité locale. Stratégie sémantique et optimisation des algorithmes Google pour votre croissance.",
-        canonical: "https://seofyagency.com/services/seo-geo",
-        ogTitle: "SEO & GEO - Optimisation de visibilité locale",
-        ogDescription: "Augmentez votre visibilité locale avec notre stratégie de SEO Géographique. Performance organique garantie.",
-        ogImage: "https://seofyagency.com/seogeo/og-image.jpg",
-        twitterTitle: "SEO & GEO - Optimisation de visibilité locale",
-        twitterDescription: "Stratégie de SEO Géographique pour votre croissance",
-        structuredData: {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-                {
-                    "@type": "ListItem",
-                    position: 1,
-                    name: "Accueil",
-                    item: "https://seofyagency.com/",
-                },
-                {
-                    "@type": "ListItem",
-                    position: 2,
-                    name: "Services",
-                    item: "https://seofyagency.com/offres",
-                },
-                {
-                    "@type": "ListItem",
-                    position: 3,
-                    name: "SEO & GEO",
-                    item: "https://seofyagency.com/services/seo-geo",
-                },
-            ],
-        },
-    });
+    const { t } = useTranslation();
 
     return (
         <div className="bg-seofy-darkgreen">
             <HeroComp
-                titre="SEO & GEO"
-                desc="Visibility does not depend on a series of isolated actions, but on a clear strategy, developed in the right order and executed with precision."
-                autresdesc="Forget everything you know about SEO"
+                titre={t("seoGeo.hero.titre")}
+                desc={t("seoGeo.hero.desc")}
+                autresdesc={t("seoGeo.hero.autresdesc")}
                 img="/seogeo/seoGeo.webp"
             />
 
             <Section
-                title="Semantic SEO to Drive Your Growth"
-                subtitle="Stop focusing on visits—focus on revenue"
-                description="Traditional SEO is slow... Our approach combines SEO with growth hacking:"
+                title={t("seoGeo.section1.title")}
+                subtitle={t("seoGeo.section1.subtitle")}
+                description={t("seoGeo.section1.description")}
                 hashtags={[
-                    "Agility and Iteration: Identifying Quick Wins to Deliver Rapid Results",
-                    "Data-Driven: testing, measurement, real-time adjustments—every decision is backed by data",
+                    t("seoGeo.section1.hashtag1"),
+                    t("seoGeo.section1.hashtag2"),
                 ]}
-                ctaLabel="Get started with your strategy"
+                ctaLabel={t("seoGeo.section1.cta")}
                 imageSrc="/seogeo/seo1.webp"
-                imageAlt="SEO growth chart"
+                imageAlt={t("seoGeo.section1.imageAlt")}
             />
 
             <Section
-                title="A thorough understanding of algorithms"
-                subtitle="Google is constantly evolving, and so are we"
-                description="Our methods are 100% tested and validated"
+                title={t("seoGeo.section2.title")}
+                subtitle={t("seoGeo.section2.subtitle")}
+                description={t("seoGeo.section2.description")}
                 hashtags={[
-                    "Technical audits (crawlability, performance, architecture)",
-                    "Optimizing E-E-A-T (Experience, Expertise, Authority, Trustworthiness)",
+                    t("seoGeo.section2.hashtag1"),
+                    t("seoGeo.section2.hashtag2"),
                 ]}
-                ctaLabel="Master your algorithms"
+                ctaLabel={t("seoGeo.section2.cta")}
                 imageSrc="/seogeo/seo2.webp"
-                imageAlt="An SEA strategy"
+                imageAlt={t("seoGeo.section2.imageAlt")}
                 imagePosition="left"
             />
 
             <SectionMots
-                description="Semantic SEO is a specific approach to optimizing"
+                description={t("seoGeo.sectionMots.description")}
                 keywords={[
-                    { label: "KEYWORDS",              rotate: -20, offsetY: 20, offsetX: "2%" },
-                    { label: "LEXICAL FIELDS",         rotate: 0,  offsetY: 5,  offsetX: "14%" },
-                    { label: "RELATIONSHIP BETWEEN CONCEPTS", rotate: -15, offsetY: 28, offsetX: "30%" },
-                    { label: "OVERALL CONTEXT",       rotate: 0,   offsetY: 0, offsetX: "52%" },
-                    { label: "RESEARCH QUESTION", rotate: 0, offsetY: 0,  offsetX: "72%" },
+                    { label: t("seoGeo.sectionMots.kw1"), rotate: -20, offsetY: 20, offsetX: "2%" },
+                    { label: t("seoGeo.sectionMots.kw2"), rotate: 0,  offsetY: 5,  offsetX: "14%" },
+                    { label: t("seoGeo.sectionMots.kw3"), rotate: -15, offsetY: 28, offsetX: "30%" },
+                    { label: t("seoGeo.sectionMots.kw4"), rotate: 0,   offsetY: 0, offsetX: "52%" },
+                    { label: t("seoGeo.sectionMots.kw5"), rotate: 0, offsetY: 0,  offsetX: "72%" },
                 ]}
                 keywordColor="#E5E5E5"
             />
 
             <Section
-                title="A strategy tailored to your unique identity"
-                subtitle="Stop focusing on visits—focus on revenue"
-                description="Traditional SEO is slow... Our approach combines SEO with growth hacking:"
+                title={t("seoGeo.section3.title")}
+                subtitle={t("seoGeo.section3.subtitle")}
+                description={t("seoGeo.section3.description")}
                 hashtags={[
-                    "Market Analysis",
-                    "Analyzing Your Competitors' Weaknesses",
-                    "Consideration of internal resources",
+                    t("seoGeo.section3.hashtag1"),
+                    t("seoGeo.section3.hashtag2"),
+                    t("seoGeo.section3.hashtag3"),
                 ]}
-                ctaLabel="Get started with your strategy"
+                ctaLabel={t("seoGeo.section3.cta")}
                 imageSrc="/seogeo/seo3.webp"
-                imageAlt="An SEA strategy"
+                imageAlt={t("seoGeo.section3.imageAlt")}
             />
 
         </div>

@@ -1,21 +1,24 @@
+import { useTranslation } from "react-i18next";
 import StatsCard from "./StatsCard";
 
-const stats = [
-    {
-        value: "+128%",
-        label: "Average organic traffic",
-    },
-    {
-        value: "+73%",
-        label: "Keywords on the first page",
-    },
-    {
-        value: "+48%",
-        label: "Organic conversions",
-    },
-];
-
 export default function StatsList() {
+    const { t } = useTranslation();
+
+    const stats = [
+        {
+            value: "+128%",
+            label: t("stats.traffic"),
+        },
+        {
+            value: "+73%",
+            label: t("stats.keywords"),
+        },
+        {
+            value: "+48%",
+            label: t("stats.conversions"),
+        },
+    ];
+
     return (
         <section className="px-4 py-16">
             <div className="mx-auto max-w-7xl">
@@ -33,12 +36,11 @@ export default function StatsList() {
                             <span className="mb-4 text-h6 leading-none text-seofy-green">❝</span>
 
                             <p className="text-t5 md:text-t4 leading-relaxed text-white/90">
-                                Thanks to Seofy, our website has gone from obscurity to the first page of Google.
-                                Inquiries have skyrocketed.
+                                {t("stats.testimonial")}
                             </p>
 
                             <span className="mt-4 text-t6 font-medium text-white/60">
-                                — Seofy Customer
+                                — {t("stats.testimonialAuthor")}
                             </span>
                         </div>
                     </div>
