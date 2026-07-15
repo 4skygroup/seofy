@@ -78,10 +78,10 @@
     }
   },
 
-  "cta" : {
-    "title" : "Ready to boost your visibility on Google?",
-    "desc" : "Get a free SEO audit and discover growth opportunities for your website.",
-    "btn" : "Get my SEO audit"
+  "cta": {
+    "title": "Ready to boost your visibility on Google?",
+    "desc": "Get a free SEO audit and discover growth opportunities for your website.",
+    "btn": "Get my SEO audit"
   },
 
   "seaSmo": {
@@ -170,6 +170,24 @@
     }
   },
 
+  "locations": {
+    "badge": "GLOBAL NETWORK",
+    "title": "Seofy, a unique vision for your growth.",
+    "description": "A digital acquisition partner that enhances your visibility, maximizes your performance, and accelerates your growth.",
+    "agent": "Local Agent",
+    "stats": {
+      "agencies": "Agencies",
+      "experts": "Experts",
+      "clients": "Clients",
+      "continents": "Continents"
+    },
+
+    "cta": {
+      "title": "Building your digital success together.",
+      "button": "Start a project"
+    }
+  },
+
   "contact": {
     "title": "Let's build your growth together",
     "subtitle": "Our experts help you define a digital strategy aligned with your goals. Contact us using whichever channel suits you best.",
@@ -181,8 +199,22 @@
     "tagline": "9 complementary areas of expertise, one goal: growing your business.",
     "form": {
       "tabs": { "callback": "Request a callback", "message": "Send a message" },
-      "subjects": ["SEO", "Social Ads", "Content Marketing", "Analytics", "Other"],
-      "timeSlots": ["9:30 – 10:30", "10:30 – 11:30", "11:30 – 12:30", "2:00 – 3:00", "3:00 – 4:00", "4:00 – 5:00", "5:00 – 6:00"],
+      "subjects": [
+        "SEO",
+        "Social Ads",
+        "Content Marketing",
+        "Analytics",
+        "Other"
+      ],
+      "timeSlots": [
+        "9:30 – 10:30",
+        "10:30 – 11:30",
+        "11:30 – 12:30",
+        "2:00 – 3:00",
+        "3:00 – 4:00",
+        "4:00 – 5:00",
+        "5:00 – 6:00"
+      ],
       "selectPlaceholder": "Select…",
       "callback": {
         "nom": "Last name",
@@ -215,5 +247,168 @@
         "error": "Something went wrong. Please try again."
       }
     }
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+
+    "sections": {
+      "collection": {
+        "title": "1. Data Collection",
+        "intro": "We collect certain data when you:",
+        "items": {
+          "item1": "Fill out a contact form",
+          "item2": "Browse the site",
+          "item3": "Subscribe to a newsletter"
+        },
+        "description": "Collected data may include: name, email address, phone number, company name, IP address…"
+      },
+
+      "usage": {
+        "title": "2. Use of Data",
+        "items": {
+          "item1": "Respond to your requests",
+          "item2": "Improve user experience",
+          "item3": "Send communications (with consent)",
+          "item4": "Analyze website traffic"
+        }
+      },
+
+      "legalBasis": {
+        "title": "3. Legal Basis",
+        "items": {
+          "item1": "Your consent",
+          "item2": "Performance of a contract",
+          "item3": "Legitimate interest (service improvement)"
+        }
+      },
+
+      "retention": {
+        "title": "4. Retention Period",
+        "items": {
+          "item1": "3 years after the last contact for prospects",
+          "item2": "10 years for billing-related data"
+        }
+      },
+
+      "sharing": {
+        "title": "5. Data Sharing",
+        "intro": "Your data is never sold. It may only be shared with:",
+        "items": {
+          "item1": "Our technical providers (hosting, analytics…)",
+          "item2": "Authorities when legally required"
+        }
+      },
+
+      "cookies": {
+        "title": "6. Cookies",
+        "intro": "This website uses cookies to:",
+        "items": {
+          "item1": "Measure audience",
+          "item2": "Improve navigation"
+        },
+        "description": "You can accept, decline or configure cookies through the consent banner."
+      },
+
+      "rights": {
+        "title": "7. Your Rights (GDPR)",
+        "intro": "In accordance with regulations, you have the right to:",
+        "items": {
+          "item1": "Access",
+          "item2": "Rectification",
+          "item3": "Erasure",
+          "item4": "Object",
+          "item5": "Portability"
+        },
+        "contactPrefix": "To exercise your rights:"
+      },
+
+      "security": {
+        "title": "8. Security",
+        "description": "We implement all necessary measures to protect your data against unauthorized access, loss, or disclosure."
+      },
+
+      "updates": {
+        "title": "9. Policy Updates",
+        "description": "This policy may be updated at any time.",
+        "lastUpdate": "Last updated: 06/24/2026"
+      },
+
+      "contact": {
+        "title": "10. Contact"
+      }
+    }
+  },
+
+  "legal": {
+    "company": {
+      "name": "Visuance Agency",
+      "email": "contact@visuanceagency.com",
+      "website": "https://seofyagency.com/",
+      "host": "OVH Cloud",
+      "hostWebsite": "https://www.ovhcloud.com/"
+    },
+
+    "title": "Legal Notices",
+
+    "publisher": {
+      "title": "Publisher",
+      "intro": "This website, available at",
+      "introSuffix": ", is published by:",
+      "companyLabel": "Company:",
+      "emailLabel": "Email:"
+    },
+
+    "hosting": {
+      "title": "1. Hosting",
+      "hostLabel": "Hosting provider:",
+      "websiteLabel": "Website:"
+    },
+
+    "intellectualProperty": {
+      "title": "2. Intellectual Property",
+      "description": "All content available on this website (texts, images, graphics, logos, icons, etc.) is the exclusive property of Seofy unless otherwise stated. Any reproduction, distribution, or use without prior written authorization is strictly prohibited."
+    },
+
+    "responsibility": {
+      "title": "3. Liability",
+      "description": "Seofy makes every effort to provide accurate and up-to-date information. However, it cannot be held liable for omissions, inaccuracies, or failures to update the information published on this website. Users remain solely responsible for how they use the information provided."
+    },
+
+    "externalLinks": {
+      "title": "4. External Links",
+      "description": "This website may contain links to third-party websites. Seofy cannot be held responsible for the content of those external websites."
+    },
+
+    "personalData": {
+      "title": "5. Personal Data",
+      "description": "Information collected through this website is processed in accordance with our Privacy Policy."
+    },
+
+    "applicableLaw": {
+      "title": "6. Applicable Law",
+      "description": "This website is governed by French law. In the event of a dispute, the competent courts shall be those having jurisdiction over the company's registered office."
+    }
+  },
+
+  "footer": {
+    "titles": {
+      "politics": "Politics",
+      "services": "Services",
+      "entities": " Our entities",
+      "networks": "Our networks"
+    },
+    "services": {
+      "seo-geo": "SEO & GEO",
+      "sea-smo": "SEA & SMO"
+    },
+    "mentions": {
+      "legal": "Legal Notices",
+      "privacy": "Privacy Policy"
+    }
+  },
+
+  "footer-bas": {
+    "desc": "Created by"
   }
 }

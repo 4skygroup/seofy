@@ -78,10 +78,10 @@
     }
   },
 
-  "cta" : {
-    "title" : "Prêt à améliorer votre visibilité sur Google ?",
-    "desc" : "Bénéficiez d'un audit SEO gratuit et découvrez les opportunités de croissance pour votre site web.",
-    "btn" : "Obtenir mon audit SEO"
+  "cta": {
+    "title": "Prêt à améliorer votre visibilité sur Google ?",
+    "desc": "Bénéficiez d'un audit SEO gratuit et découvrez les opportunités de croissance pour votre site web.",
+    "btn": "Obtenir mon audit SEO"
   },
 
   "seaSmo": {
@@ -170,6 +170,23 @@
     }
   },
 
+  "locations": {
+    "badge": "GLOBAL NETWORK",
+    "title": "Seofy, une vision unique pour votre croissance.",
+    "description": "Un partenaire en acquisition digitale qui optimise votre visibilité, maximise vos performances et accélère votre croissance.",
+    "agent": "Agent local",
+    "stats": {
+      "experts": "Experts",
+      "clients": "Clients",
+      "continents": "Continents"
+    },
+
+    "cta": {
+      "title": "Bâtir vos succès digitaux avec nous.",
+      "button": "Démarrer un projet"
+    }
+  },
+
   "contact": {
     "title": "Construisons votre croissance ensemble",
     "subtitle": "Nos experts vous accompagnent dans la définition d'une stratégie digitale alignée sur vos objectifs. Contactez-nous selon le mode d'échange qui vous convient le mieux.",
@@ -180,9 +197,26 @@
     },
     "tagline": "9 expertises complémentaires, un seul objectif : faire grandir votre entreprise.",
     "form": {
-      "tabs": { "callback": "Se faire rappeler", "message": "Envoyer un message" },
-      "subjects": ["SEO & Référencement", "Social Ads", "Content Marketing", "Analytics", "Autre"],
-      "timeSlots": ["9h30 – 10h30", "10h30 – 11h30", "11h30 – 12h30", "14h00 – 15h00", "15h00 – 16h00", "16h00 – 17h00", "17h00 – 18h00"],
+      "tabs": {
+        "callback": "Se faire rappeler",
+        "message": "Envoyer un message"
+      },
+      "subjects": [
+        "SEO & Référencement",
+        "Social Ads",
+        "Content Marketing",
+        "Analytics",
+        "Autre"
+      ],
+      "timeSlots": [
+        "9h30 – 10h30",
+        "10h30 – 11h30",
+        "11h30 – 12h30",
+        "14h00 – 15h00",
+        "15h00 – 16h00",
+        "16h00 – 17h00",
+        "17h00 – 18h00"
+      ],
       "selectPlaceholder": "Sélectionner…",
       "callback": {
         "nom": "Nom",
@@ -215,5 +249,168 @@
         "error": "Une erreur est survenue. Réessaie."
       }
     }
+  },
+
+  "privacy": {
+    "title": "Politique de confidentialité",
+
+    "sections": {
+      "collection": {
+        "title": "1. Collecte des données",
+        "intro": "Nous collectons certaines données lorsque vous :",
+        "items": {
+          "item1": "Remplissez un formulaire de contact",
+          "item2": "Naviguez sur le site",
+          "item3": "Vous inscrivez à une newsletter"
+        },
+        "description": "Les données collectées peuvent inclure : nom, adresse e-mail, téléphone, entreprise, adresse IP…"
+      },
+
+      "usage": {
+        "title": "2. Utilisation des données",
+        "items": {
+          "item1": "Répondre à vos demandes",
+          "item2": "Améliorer l'expérience utilisateur",
+          "item3": "Envoyer des communications (avec votre consentement)",
+          "item4": "Analyser le trafic du site"
+        }
+      },
+
+      "legalBasis": {
+        "title": "3. Base légale",
+        "items": {
+          "item1": "Votre consentement",
+          "item2": "L'exécution d'un contrat",
+          "item3": "L'intérêt légitime (amélioration des services)"
+        }
+      },
+
+      "retention": {
+        "title": "4. Durée de conservation",
+        "items": {
+          "item1": "3 ans après le dernier contact pour les prospects",
+          "item2": "10 ans pour les données liées à la facturation"
+        }
+      },
+
+      "sharing": {
+        "title": "5. Partage des données",
+        "intro": "Vos données ne sont jamais revendues. Elles peuvent uniquement être partagées avec :",
+        "items": {
+          "item1": "Nos prestataires techniques (hébergement, analytics…)",
+          "item2": "Les autorités lorsque la loi l'exige"
+        }
+      },
+
+      "cookies": {
+        "title": "6. Cookies",
+        "intro": "Ce site utilise des cookies pour :",
+        "items": {
+          "item1": "Mesurer l'audience",
+          "item2": "Améliorer la navigation"
+        },
+        "description": "Vous pouvez accepter, refuser ou configurer les cookies via le bandeau de consentement."
+      },
+
+      "rights": {
+        "title": "7. Vos droits (RGPD)",
+        "intro": "Conformément à la réglementation, vous disposez des droits suivants :",
+        "items": {
+          "item1": "Accès",
+          "item2": "Rectification",
+          "item3": "Suppression",
+          "item4": "Opposition",
+          "item5": "Portabilité"
+        },
+        "contactPrefix": "Pour exercer vos droits :"
+      },
+
+      "security": {
+        "title": "8. Sécurité",
+        "description": "Nous mettons en œuvre toutes les mesures nécessaires afin de protéger vos données contre tout accès non autorisé, toute perte ou toute divulgation."
+      },
+
+      "updates": {
+        "title": "9. Mise à jour de la politique",
+        "description": "Cette politique peut être mise à jour à tout moment.",
+        "lastUpdate": "Dernière mise à jour : 24/06/2026"
+      },
+
+      "contact": {
+        "title": "10. Contact"
+      }
+    }
+  },
+
+  "legal": {
+    "company": {
+      "name": "Visuance Agency",
+      "email": "contact@visuanceagency.com",
+      "website": "https://seofyagency.com/",
+      "host": "OVH Cloud",
+      "hostWebsite": "https://www.ovhcloud.com/"
+    },
+
+    "title": "Mentions légales",
+
+    "publisher": {
+      "title": "Éditeur",
+      "intro": "Ce site, accessible à l'adresse",
+      "introSuffix": ", est édité par :",
+      "companyLabel": "Société :",
+      "emailLabel": "Email :"
+    },
+
+    "hosting": {
+      "title": "1. Hébergement",
+      "hostLabel": "Hébergeur :",
+      "websiteLabel": "Site web :"
+    },
+
+    "intellectualProperty": {
+      "title": "2. Propriété intellectuelle",
+      "description": "L'ensemble des contenus présents sur ce site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive de Seofy, sauf mention contraire. Toute reproduction, distribution ou exploitation sans autorisation écrite préalable est strictement interdite."
+    },
+
+    "responsibility": {
+      "title": "3. Responsabilité",
+      "description": "Seofy s'efforce de fournir des informations aussi précises que possible. Toutefois, l'entreprise ne saurait être tenue responsable des omissions, inexactitudes ou défauts de mise à jour. L'utilisateur reste seul responsable de l'utilisation des informations diffusées."
+    },
+
+    "externalLinks": {
+      "title": "4. Liens externes",
+      "description": "Ce site peut contenir des liens vers des sites tiers. Seofy ne peut être tenue responsable du contenu de ces sites externes."
+    },
+
+    "personalData": {
+      "title": "5. Données personnelles",
+      "description": "Les informations collectées via ce site sont traitées conformément à notre politique de confidentialité."
+    },
+
+    "applicableLaw": {
+      "title": "6. Droit applicable",
+      "description": "Le présent site est soumis au droit français. En cas de litige, les tribunaux compétents seront ceux du ressort du siège social."
+    }
+  },
+
+  "footer": {
+    "titles": {
+      "politics": "Politique",
+      "services": "Services",
+      "entities": "Nos entités",
+      "networks": "Nos réseaux"
+    },
+    "services": {
+      "seo-geo": "SEO & GEO",
+      "sea-smo": "SEA & SMO"
+    },
+    "mentions": {
+      "legal": "Mentions légales",
+      "privacy": "Confidentialité"
+    }
+  },
+
+  "footer-bas": {
+    "desc": "Créé par"
   }
 }
