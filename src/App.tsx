@@ -1,4 +1,4 @@
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 import Home from "./pages/Home.tsx";
 import Navbar from "./components/Navbar.tsx";
@@ -12,24 +12,24 @@ import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 import Locations from "./pages/Locations.tsx";
 
 function App() {
-    return (
-        <div className="overflow-x-hidden">
-            <ScrollToTop />
-            <Navbar/>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/offres" element={<Offres/> } />
-                <Route path="/contact" element={<Contact />} />
+  return (
+    <div className="overflow-x-hidden font-glacial">
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/offres" element={<Offres />} />
+        <Route path="/contact" element={<Contact />} />
 
-                <Route path="/location" element={<Locations />} />
-                <Route path="/mentions-legales" element={<MentionsLegales />} />
-                <Route path="/confidentialite" element={<PolitiqueConfidentialite/>} />
-                <Route path="/services/seo-geo" element={<SeoGeo />} />
-                <Route path="/services/sea-smo" element={<SeaSmo />} />
-            </Routes>
-            <Footer/>
-        </div>
-    )
+        <Route path="/location" element={<Locations />} />
+        <Route path="/mentions-legales" element={<MentionsLegales />} />
+        <Route path="/confidentialite" element={<PolitiqueConfidentialite />} />
+        <Route path="/services/seo-geo" element={<SeoGeo />} />
+        <Route path="/services/sea-smo" element={<SeaSmo />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
