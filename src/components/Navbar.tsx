@@ -160,7 +160,7 @@ export default function Navbar() {
                 {/* Logo centré */}
                 <div className="flex justify-center mt-16 mb-12">
                     <NavLink to="/" onClick={() => setMenuOpen(false)}>
-                        <img src="/logoSeofy.webp" alt="Seofy" className="h-12" />
+                        <img src="/logoSeofy.webp" alt="Seofy" className="h-12" loading="lazy"/>
                     </NavLink>
                 </div>
 

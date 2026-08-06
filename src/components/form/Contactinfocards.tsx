@@ -46,6 +46,7 @@ export default function ContactInfoCards() {
                     src="/logoSeofy.webp"
                     alt=""
                     className="h-6 w-auto object-contain"
+                    loading="lazy"
                     style={{ filter: "brightness(0) invert(1)" }}
                 />
                 <p className="text-t6 md:text-t5 leading-relaxed text-white/40">

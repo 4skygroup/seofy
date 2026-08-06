@@ -1,7 +1,40 @@
 import { useTranslation } from "react-i18next";
+import {useMetaTags} from "../hooks/useMetaTags.ts";
 
 export default function MentionsLegales() {
   const { t } = useTranslation();
+
+  useMetaTags({
+      title: "Mentions légales | Seofy",
+      description: "Consultez les mentions légales du site Seofy et les informations relatives à l'éditeur et à l'hébergement du site.",
+      canonical: "https://seofyagency.com/mentions-legales",
+      ogTitle: "Mentions légales | Seofy",
+      ogDescription: "Consultez les mentions légales du site Seofy.",
+      ogImage: "https://seofyagency.com/og-image.jpg",
+      ogType: "website",
+      twitterTitle: "Mentions légales | Seofy",
+      twitterDescription: "Consultez les mentions légales du site Seofy.",
+      twitterImage: "https://seofyagency.com/og-image.jpg",
+      structuredData: {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+              {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Accueil",
+                  item: "https://seofyagency.com/",
+              },
+              {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Mentions légales",
+                  item: "https://seofyagency.com/mentions-legales",
+              },
+          ],
+      },
+  });
+
 
   const publisherItems = ["company", "email"];
   const hostingItems = ["host", "website"];

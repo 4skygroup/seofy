@@ -1,7 +1,39 @@
 import { useTranslation } from "react-i18next";
+import {useMetaTags} from "../hooks/useMetaTags.ts";
 
 export default function PolitiqueConfidentialite() {
   const { t } = useTranslation();
+
+    useMetaTags({
+        title: "Politique de confidentialité | Seofy",
+        description: "Consultez la politique de confidentialité de Seofy concernant la collecte, l'utilisation et la protection de vos données personnelles.",
+        canonical: "https://seofyagency.com/confidentialite",
+        ogTitle: "Politique de confidentialité | Seofy",
+        ogDescription: "Consultez la politique de confidentialité de Seofy concernant la protection de vos données personnelles.",
+        ogImage: "https://seofyagency.com/og-image.jpg",
+        ogType: "website",
+        twitterTitle: "Politique de confidentialité | Seofy",
+        twitterDescription: "Consultez la politique de confidentialité de Seofy concernant la protection de vos données personnelles.",
+        twitterImage: "https://seofyagency.com/og-image.jpg",
+        structuredData: {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+                {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Accueil",
+                    item: "https://seofyagency.com/",
+                },
+                {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Politique de confidentialité",
+                    item: "https://seofyagency.com/confidentialite",
+                },
+            ],
+        },
+    });
 
   const sections = [
     {

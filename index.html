@@ -1,80 +1,158 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <!-- Charset et Viewport -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Favicon et PWA Manifest -->
-    <link rel="icon" type="image/svg+xml" href="/flavicon.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <meta name="theme-color" content="#0f172a" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Seofy" />
-    
-    <title>Seofy - Agence SEO & Digital Marketing | Augmentez votre visibilité</title>
-    <meta name="description" content="Agence spécialisée en SEO, SEA et Social Media Marketing. Augmentez votre visibilité en ligne avec nos services de référencement et marketing digital." />
-    <meta name="keywords" content="SEO, référencement, agence SEO, SEA, social media, digital marketing" />
-    <meta name="author" content="Seofy" />
-    
-    <!-- Canonical -->
-    <link rel="canonical" href="https://seofyagency.com/" />
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Seofy - Agence SEO & Digital Marketing" />
-    <meta property="og:description" content="Augmentez votre visibilité en ligne avec nos services SEO, SEA et Social Media Marketing." />
-    <meta property="og:url" content="https://seofyagency.com/" />
-    <meta property="og:image" content="https://seofyagency.com/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="Seofy" />
-    <meta property="og:locale" content="fr_FR" />
-    
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Seofy - Agence SEO & Digital Marketing" />
-    <meta name="twitter:description" content="Augmentez votre visibilité en ligne avec nos services SEO, SEA et Social Media Marketing." />
-    <meta name="twitter:image" content="https://seofyagency.com/og-image.jpg" />
-    <meta name="twitter:site" content="@seofy" />
-    <meta name="twitter:creator" content="@seofy" />
-    
-    <script type="application/ld+json">
+<head>
+  <!-- Charset et Viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon et PWA Manifest -->
+  <link rel="icon" type="image/png" href="/flavicon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Seofy" />
+
+  <!-- SEO de base -->
+  <title>Seofy - Agence SEO & Digital Marketing | Augmentez votre visibilité</title>
+  <meta name="description" content="Agence spécialisée en SEO, SEA et Social Media Marketing. Augmentez votre visibilité en ligne avec nos services de référencement et marketing digital." />
+  <meta name="keywords" content="SEO, référencement, agence SEO, SEA, social media, digital marketing" />
+  <meta name="author" content="Seofy" />
+
+  <!-- Robots et indexation -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Seofy",
-      "url": "https://seofyagency.com",
-      "logo": "https://seofyagency.com/logo.png",
-      "description": "Agence spécialisée en SEO, SEA et Social Media Marketing",
-      "sameAs": [
-        "https://www.facebook.com/seofy",
-        "https://twitter.com/seofy",
-        "https://www.linkedin.com/company/seofy",
-        "https://www.instagram.com/seofy"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "email": "contact@seofyagency.com",
-        "telephone": "+33XXXXXXXXX"
-      }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://seofyagency.com/#organization",
+          "name": "Seofy",
+          "url": "https://seofyagency.com/",
+          "logo": "https://seofyagency.com/logoSeofy.webp",
+          "description": "Agence spécialisée en SEO, SEA et Social Media Marketing.",
+          "sameAs": [
+            "https://www.tiktok.com/@seofyagencyio",
+            "https://www.instagram.com/seofy.io/",
+            "https://www.linkedin.com/company/seofyagency"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://seofyagency.com/#website",
+          "url": "https://seofyagency.com/",
+          "name": "Seofy",
+          "publisher": {
+            "@id": "https://seofyagency.com/#organization"
+          },
+          "inLanguage": "fr-FR"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://seofyagency.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://seofyagency.com/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://seofyagency.com/services/seo-geo/#service",
+          "name": "SEO & GEO",
+          "description": "Services de référencement naturel et d'optimisation GEO pour améliorer la visibilité d'un site web.",
+          "provider": {
+            "@id": "https://seofyagency.com/#organization"
+          },
+          "url": "https://seofyagency.com/services/seo-geo"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://seofyagency.com/services/sea-smo/#service",
+          "name": "SEA & SMO",
+          "description": "Services de SEA et Social Media Optimization pour développer la visibilité et les conversions.",
+          "provider": {
+            "@id": "https://seofyagency.com/#organization"
+          },
+          "url": "https://seofyagency.com/services/sea-smo"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://seofyagency.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Combien de temps faut-il pour voir des résultats en SEO ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le SEO est une stratégie à moyen et long terme. En général, les premiers résultats commencent à apparaître entre 3 et 6 mois, selon la concurrence, l'état actuel de votre site et les actions mises en place. Des gains plus significatifs, en trafic, positionnement et conversions, se consolident généralement entre 6 et 12 mois."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quel budget faut-il prévoir pour le SEO ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le budget dépend de plusieurs facteurs : la taille de votre site, le niveau de concurrence sur votre marché, vos objectifs et le niveau d'accompagnement souhaité. Chaque projet étant unique, une analyse personnalisée est indispensable pour proposer une stratégie adaptée à votre situation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quelle est la différence entre SEO et SEA ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le SEO consiste à optimiser votre site pour apparaître dans les résultats naturels de Google. Le SEA repose sur des publicités comme Google Ads. Le SEO est un investissement long terme, tandis que le SEA délivre des résultats rapides mais temporaires. Les deux sont complémentaires et fonctionnent mieux ensemble pour maximiser votre visibilité."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Travaillez-vous avec toutes les plateformes ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, nous travaillons avec la majorité des plateformes : WordPress, Shopify, Webflow, ainsi que les sites sur mesure. Notre approche s'adapte à votre environnement technique pour garantir des optimisations efficaces, quel que soit votre CMS."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Faut-il un blog pour le SEO ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Un blog n'est pas obligatoire, mais fortement recommandé. Il permet de cibler davantage de mots-clés, d'attirer un trafic qualifié et de renforcer votre autorité auprès de Google."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment se déroule un accompagnement SEO ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Un accompagnement SEO se déroule en plusieurs étapes : un audit complet couvrant les aspects techniques, éditoriaux et concurrentiels ; la définition d'une stratégie SEO adaptée à vos objectifs ; des optimisations techniques et sémantiques ; la création et l'optimisation de contenu ; le netlinking ; et enfin un suivi mensuel avec des ajustements et un reporting clair."
+              }
+            }
+          ]
+        }
+      ]
     }
-    </script>
-    
-    <!-- Robots et indexation -->
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    
-    <!-- Préconnexion pour performances -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- DNS Prefetch -->
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  </script>
+
+  <!-- Préconnexion pour performances -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+</head>
+
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+</body>
 </html>
+

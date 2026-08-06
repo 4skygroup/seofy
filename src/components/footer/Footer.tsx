@@ -35,7 +35,6 @@ const FooterLink = ({
 
 const Footer = () => {
   const { t } = useTranslation();
-  //
 
   return (
     <footer className="relative w-full overflow-hidden bg-black">

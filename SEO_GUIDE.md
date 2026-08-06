@@ -92,10 +92,12 @@ Sitemap: https://seofyagency.com/sitemap-images.xml
 ```
 
 ### Configuration PWA
+
 ```html
-<link rel="manifest" href="/manifest.webmanifest" />
-<meta name="theme-color" content="#0f172a" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="manifest" href="/public/manifest.webmanifest"/>
+<meta name="theme-color" content="#0f172a"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
 ```
 
 ---

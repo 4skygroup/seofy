@@ -1,10 +1,42 @@
 import { useTranslation } from "react-i18next";
 import GlobeMap from "../components/map/GlobeMap.tsx";
 import { useNavigate } from "react-router-dom";
+import {useMetaTags} from "../hooks/useMetaTags.ts";
 
 export default function Locations() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  useMetaTags({
+      title: "Nos implantations et zones d'intervention | Seofy",
+      description: "Découvrez les zones d'intervention de Seofy et notre présence à l'international pour accompagner vos projets SEO et marketing digital.",
+      canonical: "https://seofyagency.com/location",
+      ogTitle: "Nos implantations et zones d'intervention | Seofy",
+      ogDescription: "Découvrez les zones d'intervention de Seofy et notre présence à l'international.",
+      ogImage: "https://seofyagency.com/og-image.jpg",
+      ogType: "website",
+      twitterTitle: "Nos implantations et zones d'intervention | Seofy",
+      twitterDescription: "Découvrez les zones d'intervention de Seofy et notre présence à l'international.",
+      twitterImage: "https://seofyagency.com/og-image.jpg",
+      structuredData: {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+              {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Accueil",
+                  item: "https://seofyagency.com/",
+              },
+              {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Localisation",
+                  item: "https://seofyagency.com/location",
+              },
+          ],
+      },
+  });
 
   return (
     <div className="bg-black text-white">
