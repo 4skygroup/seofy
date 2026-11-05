@@ -11,9 +11,9 @@ export default function HeroComp({ titre, desc, autresdesc, img }: HeroCompProps
             <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 w-full max-w-5xl">
                 {/* Left content */}
                 <div className="flex flex-col items-start justify-center w-full md:w-1/2">
-                    <h2 className="text-h5 md:text-h4 font-glacial font-bold text-white mb-6 leading-tight">
+                    <h1 className="text-h5 md:text-h4 font-glacial font-bold text-white mb-6 leading-tight">
                         {titre}
-                    </h2>
+                    </h1>
 
                     <p className="text-t5 md:text-t4 font-glacial text-seofy-white font-normal mb-6 leading-relaxed">
                         {desc}

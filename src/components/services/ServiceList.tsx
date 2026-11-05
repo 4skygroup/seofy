@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 import ServiceCard, { type ServiceCardProps } from "./ServiceCard";
 
-export default function ServiceList() {
+// titrePrincipal : sur la page Offres, ce titre est le titre principal (h1) de la page.
+export default function ServiceList({ titrePrincipal = false }: { titrePrincipal?: boolean }) {
+    const Titre = titrePrincipal ? "h1" : "h2";
     const { t } = useTranslation();
 
     const SERVICES: ServiceCardProps[] = [
@@ -24,9 +26,9 @@ export default function ServiceList() {
     return (
         <section className="flex flex-col items-center gap-10 px-6 py-20 bg-seofy-darkgreen min-h-screen">
             <div className="flex flex-col items-center gap-2">
-                <h2 className="font-glacial text-h6 md:text-h5 text-white text-center m-0">
+                <Titre className="font-glacial text-h6 md:text-h5 text-white text-center m-0">
                     {t("services.heading")}
-                </h2>
+                </Titre>
                 <div className="w-8 h-0.5 bg-seofy-green" />
             </div>
 

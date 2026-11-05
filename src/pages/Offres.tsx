@@ -31,7 +31,7 @@ function Offres() {
         },
     });
 
-    return <ServiceList />;
+    return <ServiceList titrePrincipal />;
 }
 
 export default Offres;
