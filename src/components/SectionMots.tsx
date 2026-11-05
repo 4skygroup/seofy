@@ -20,7 +20,7 @@ export default function SectionMots({ description, keywords, keywordColor }: Flo
 
             <div className="flex flex-wrap items-end justify-center gap-4 md:gap-12 w-full min-h-16 md:min-h-24">
                 {keywords.map((kw) => (
-                    <span key={kw.label} className="select-none font-bold uppercase text-t7 md:text-t6 tracking-widest" style={{ color: keywordColor, transform: `rotate(${kw.rotate}deg) translateY(${kw.offsetY}px)`, transformOrigin: "left bottom" }}>
+                    <span key={kw.label} className="select-none font-bold uppercase text-t6 md:text-t6 tracking-widest" style={{ color: keywordColor, transform: `rotate(${kw.rotate}deg) translateY(${kw.offsetY}px)`, transformOrigin: "left bottom" }}>
                         {kw.label}
                     </span>
                 ))}
